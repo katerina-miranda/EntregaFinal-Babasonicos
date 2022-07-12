@@ -12,6 +12,9 @@ html {
 /* index */
 header {
   background-color: #f8f9fa;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(166,20,42,1) 60%);
+  border-radius: 10px;
+  margin: 5px;
 }
 
 nav ul li a {
@@ -83,7 +86,10 @@ h5 {
   padding-top: 10px;
   padding-left: 40px;
   padding-bottom: 10px;
-  ;
+}
+
+.logoIndex:hover {
+  transform: scale(0.9);
 }
 
 .encabezado {
@@ -198,9 +204,7 @@ h5 {
   border-spacing: 50px 10px;
 }
 
-tr,
-td,
-th {
+tr, td, th {
   border: 0.5px solid rgb(125, 37, 37);
   padding: 10px;
 }
@@ -276,6 +280,11 @@ div {
 
 .redesSociales {
   width: 40px;
+  height: 10;
+}
+
+.redesSociales:hover {
+  transform: scale(1.5);
 }
 
 /* Selector ID */
