@@ -52,10 +52,14 @@ h4 {
   justify-content: center;
 }
 
-.imagen1,
-.imagen2 {
+.imagen1, .imagen2 {
   width: 350px;
   margin: 70px 70px;
+}
+
+.imagen1:hover, .imagen2:hover {
+  transform: scale(1.1);
+  transition: all 2s;
 }
 
 p {
@@ -89,7 +93,8 @@ h5 {
 }
 
 .logoIndex:hover {
-  transform: scale(0.9);
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 .encabezado {
@@ -112,6 +117,11 @@ h5 {
   display: inline;
   margin: 9px;
   padding: 9px;
+}
+
+.encabezado__lista__item:hover {
+  transform: scale(0.8);
+  transition: all 1s;
 }
 
 .titulo {
@@ -168,6 +178,7 @@ h5 {
   margin: 5px;
   padding: 20px;
   font-size: 30px;
+  background: radial-gradient(circle, rgba(166,20,42,1) 10%, rgba(255,255,255,1) 35%);
 }
 
 .galeriaImagenes {
@@ -182,6 +193,11 @@ h5 {
   width: 350px;
   object-fit: cover;
   margin: 0px 10px;
+}
+
+.imagen3:hover {
+  transform: scale(0.9);
+  transition: all 1s;
 }
 
 .videos {
@@ -219,7 +235,8 @@ tr, td, th {
   align-items: center;
   color: #000000;
   font-weight: bold;
-  background-color: #a6142aa1;
+  background-color: #a6142ac3;
+  border-radius: 15px;
 }
 
 textarea {
@@ -285,6 +302,7 @@ div {
 
 .redesSociales:hover {
   transform: scale(1.5);
+  transition: all 1s;
 }
 
 /* Selector ID */
@@ -348,9 +366,7 @@ span {
     padding: 0;
   }
 
-  .imagen1,
-  .imagen2,
-  iframe {
+  .imagen1, .imagen2, iframe {
     margin: 0;
     width: 350px;
   }
@@ -361,9 +377,7 @@ span {
     justify-content: space-evenly;
   }
 
-  .imagenTexto1,
-  .imagenTexto2,
-  .gridArea {
+  .imagenTexto1, .imagenTexto2, .gridArea {
     display: flex;
     flex-direction: column;
   }
