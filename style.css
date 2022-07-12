@@ -181,6 +181,11 @@ h5 {
   background: radial-gradient(circle, rgba(166,20,42,1) 10%, rgba(255,255,255,1) 35%);
 }
 
+.h1:hover {
+  transform: scale(1) rotateX(360deg);
+  transition: all 5s;
+}
+
 .galeriaImagenes {
   width: 85%;
   overflow-x: scroll;
@@ -313,10 +318,16 @@ div {
   background-color: #3133357c;
   border: solid 2px #a6142a;
   border-radius: 5px;
+  width: 100px;
 
   /* 4 valores, 2 valores, 1 valor */
   padding: 20px 20px 20px 20px;
   margin: 25px;
+}
+
+#link:hover {
+  transform: scale(0.9);
+  transition: all 1s;
 }
 
 #whatsapp {
