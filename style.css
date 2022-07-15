@@ -85,13 +85,6 @@ h5 {
 }
 
 /* Selector de clase */
-.logoIndex {
-  width: 50px;
-  padding-top: 10px;
-  padding-left: 40px;
-  padding-bottom: 10px;
-}
-
 .logoIndex:hover {
   transform: scale(1.1);
   transition: all 1s;
@@ -112,14 +105,14 @@ h5 {
   align-items: center;
 }
 
-.encabezado__lista__item {
+.navbar-brand {
   list-style-type: none;
   display: inline;
   margin: 9px;
   padding: 9px;
 }
 
-.encabezado__lista__item:hover {
+.navar-brand:hover {
   transform: scale(0.8);
   transition: all 1s;
 }
@@ -212,21 +205,13 @@ h5 {
 }
 
 /* carta */
-.tabla {
+.table {
   text-align: center;
   margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bordesTabla {
-  border-collapse: separate;
-  border-spacing: 50px 10px;
 }
 
 tr, td, th {
-  border: 0.5px solid rgb(125, 37, 37);
+  border: 0.5px solid rgb(74, 23, 23);
   padding: 10px;
 }
 
