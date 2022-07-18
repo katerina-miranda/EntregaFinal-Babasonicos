@@ -203,16 +203,16 @@ h5 {
   display: flex;
   justify-content: space-around;
 }
-
 /* carta */
-.table {
-  text-align: center;
-  margin: 30px;
+.col { 
+  background-color: #7d3e4885;
+  padding: 10px 10px;
+  margin: 1%;
 }
 
-tr, td, th {
-  border: 0.5px solid rgb(74, 23, 23);
-  padding: 10px;
+.negrita {
+  font-weight: 800;
+  color: #791121;
 }
 
 /* contacto */
