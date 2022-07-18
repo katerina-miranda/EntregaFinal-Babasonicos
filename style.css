@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-html {
+body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #151515;
@@ -64,7 +64,7 @@ h4 {
 
 p {
   color: #414549;
-  padding: 10px 50px 20px;
+  padding: 0px 20px;
   font-weight: 400;
   font-size: 21px;
   line-height: 24px;
@@ -277,22 +277,28 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px auto;
-}
-
-.footer__lista__item {
-  display: inline;
-  width: 80px;
+  margin: auto;
 }
 
 .redesSociales {
-  width: 40px;
-  height: 10;
+  color: #791121;
+  padding: 20px;
+  font-style: normal;
 }
 
 .redesSociales:hover {
   transform: scale(1.5);
   transition: all 1s;
+  color:#791121;
+}
+
+i a {
+  color: #414549;
+  text-decoration: none;
+}
+
+i a:hover {
+  color: #791121;
 }
 
 /* Selector ID */
@@ -323,11 +329,11 @@ div {
 }
 
 span {
-  color: #777777;
-  font-size: 21px;
-  font-weight: 400;
-  padding: 20px;
-  margin: 20px;
+  color: #77777758;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 10px;
   display: flex;
 }
 
@@ -349,12 +355,6 @@ span {
 
   .encabezado__lista__item {
     margin: 0;
-    padding: 9px;
-  }
-
-  .logoIndex {
-    width: 70px;
-    height: 110px;
     padding: 9px;
   }
 
@@ -407,8 +407,12 @@ span {
     object-fit: contain;
   }
 
-  .pieMedia {
+  .pieMedia, .footer__lista {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .redesSociales {
+    padding: 10px;
   }
 }
