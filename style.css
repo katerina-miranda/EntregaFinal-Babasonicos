@@ -217,28 +217,25 @@ tr, td, th {
 
 /* contacto */
 .formulario {
-  margin: auto;
-  width: 350px;
-  margin-bottom: 25px;
+  padding: 5%;
+  margin: 0px 10%;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #000000;
-  font-weight: bold;
-  background-color: #a6142ac3;
-  border-radius: 15px;
+  background-color: #7d3e48;
+  border-radius: 25px;
+}
+.botonForm {
+  display: flex;
+  justify-content: center;
 }
 
-textarea {
-  resize: none;
+.btn {
+  background-color: #79112149;
 }
 
-div {
-  color: #000000;
-  margin: 5px;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 24px;
+.btn:hover{
+  background-color: #791121;
 }
 
 /* ubicacion */
@@ -259,10 +256,6 @@ div {
 }
 
 /* footer */
-.primerParrafo {
-  font-weight: bold;
-}
-
 .footer {
   background-color: #000000;
 }
