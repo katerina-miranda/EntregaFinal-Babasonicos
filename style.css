@@ -17,16 +17,7 @@ header {
   margin: 5px;
 }
 
-nav ul li a {
-  color: #151515;
-  text-decoration: none;
-  font-size: 21px;
-  font-weight: 900;
-  padding: 1.25rem;
-}
-
-h3,
-h4 {
+h3, h4 {
   font-family: "Playfair Display", serif;
 }
 
@@ -85,7 +76,12 @@ h5 {
 }
 
 /* Selector de clase */
-.logoIndex:hover {
+img {
+  width: 50px;
+  margin-left: 25%;
+}
+
+img:hover {
   transform: scale(1.1);
   transition: all 1s;
 }
@@ -93,28 +89,23 @@ h5 {
 .encabezado {
   position: sticky;
   top: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.encabezado__lista {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.navbar-brand {
+/* .navbar-brand {
   list-style-type: none;
   display: inline;
   margin: 9px;
   padding: 9px;
-}
+} */
 
 .navar-brand:hover {
   transform: scale(0.8);
   transition: all 1s;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .titulo {
@@ -197,12 +188,12 @@ h5 {
   transform: scale(0.9);
   transition: all 1s;
 }
-
 .videos {
-  margin: 50px;
+  margin: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
 }
+
 /* carta */
 .col { 
   background-color: #7d3e4885;
