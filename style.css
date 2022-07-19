@@ -89,18 +89,20 @@ img:hover {
 .encabezado {
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
-/* .navbar-brand {
-  list-style-type: none;
-  display: inline;
-  margin: 9px;
-  padding: 9px;
-} */
+.nav-link {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 5px;
+  margin: 5px;
+}
 
-.navar-brand:hover {
+.nav-link:hover {
   transform: scale(0.8);
   transition: all 1s;
+  color: white;
 }
 
 .collapse {
