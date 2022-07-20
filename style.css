@@ -53,29 +53,6 @@ h4 {
   transition: all 2s;
 }
 
-p {
-  color: #414549;
-  padding: 0px 20px;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 24px;
-  letter-spacing: 0em;
-}
-
-h5 {
-  color: #a6142a;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 5px;
-  padding: 12px;
-  font-weight: 400;
-  line-height: 24px;
-
-}
-
-/* Selector de clase */
 img {
   width: 50px;
   margin-left: 25%;
@@ -156,6 +133,27 @@ img:hover {
 .resaltado {
   background-color: #a6142ab4;
   border-radius: 5px;
+}
+
+p {
+  color: #414549;
+  padding: 0px 20px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+h5 {
+  color: #a6142a;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  padding: 12px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 /* galería */
