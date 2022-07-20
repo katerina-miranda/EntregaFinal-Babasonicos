@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-html {
+body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #151515;
@@ -17,16 +17,7 @@ header {
   margin: 5px;
 }
 
-nav ul li a {
-  color: #151515;
-  text-decoration: none;
-  font-size: 21px;
-  font-weight: 900;
-  padding: 1.25rem;
-}
-
-h3,
-h4 {
+h3, h4 {
   font-family: "Playfair Display", serif;
 }
 
@@ -64,7 +55,7 @@ h4 {
 
 p {
   color: #414549;
-  padding: 10px 50px 20px;
+  padding: 0px 20px;
   font-weight: 400;
   font-size: 21px;
   line-height: 24px;
@@ -85,14 +76,12 @@ h5 {
 }
 
 /* Selector de clase */
-.logoIndex {
+img {
   width: 50px;
-  padding-top: 10px;
-  padding-left: 40px;
-  padding-bottom: 10px;
+  margin-left: 25%;
 }
 
-.logoIndex:hover {
+img:hover {
   transform: scale(1.1);
   transition: all 1s;
 }
@@ -100,28 +89,25 @@ h5 {
 .encabezado {
   position: sticky;
   top: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 1;
 }
 
-.encabezado__lista {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.nav-link {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 5px;
+  margin: 5px;
 }
 
-.encabezado__lista__item {
-  list-style-type: none;
-  display: inline;
-  margin: 9px;
-  padding: 9px;
-}
-
-.encabezado__lista__item:hover {
+.nav-link:hover {
   transform: scale(0.8);
   transition: all 1s;
+  color: white;
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .titulo {
@@ -204,65 +190,55 @@ h5 {
   transform: scale(0.9);
   transition: all 1s;
 }
-
 .videos {
-  margin: 50px;
+  margin: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 
 /* carta */
-.tabla {
-  text-align: center;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.col { 
+  background-color: #7d3e4885;
+  padding: 10px 10px;
+  margin: 1%;
 }
 
-.bordesTabla {
-  border-collapse: separate;
-  border-spacing: 50px 10px;
-}
-
-tr, td, th {
-  border: 0.5px solid rgb(125, 37, 37);
-  padding: 10px;
+.negrita {
+  font-weight: 800;
+  color: #791121;
 }
 
 /* contacto */
 .formulario {
-  margin: auto;
-  width: 350px;
-  margin-bottom: 25px;
+  padding: 5%;
+  margin: 0px 10%;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #000000;
-  font-weight: bold;
-  background-color: #a6142ac3;
-  border-radius: 15px;
+  background-color: #7d3e48;
+  border-radius: 25px;
+}
+.botonForm {
+  display: flex;
+  justify-content: center;
 }
 
-textarea {
-  resize: none;
+.btn {
+  background-color: #79112149;
 }
 
-div {
-  color: #000000;
-  margin: 5px;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 24px;
+.btn:hover{
+  background-color: #791121;
 }
 
 /* ubicacion */
 .logoUbicacion {
   width: 50px;
   height: 50px;
+  margin-left: 0;
 }
 
-.ubicacionMapa{
+.ubicacionMapa {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,10 +250,6 @@ div {
 }
 
 /* footer */
-.primerParrafo {
-  font-weight: bold;
-}
-
 .footer {
   background-color: #000000;
 }
@@ -292,22 +264,28 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px auto;
-}
-
-.footer__lista__item {
-  display: inline;
-  width: 80px;
+  margin: auto;
 }
 
 .redesSociales {
-  width: 40px;
-  height: 10;
+  color: #791121;
+  padding: 20px;
+  font-style: normal;
 }
 
 .redesSociales:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: all 1s;
+  color:#791121;
+}
+
+i a {
+  color: #414549;
+  text-decoration: none;
+}
+
+i a:hover {
+  color: #791121;
 }
 
 /* Selector ID */
@@ -338,11 +316,11 @@ div {
 }
 
 span {
-  color: #777777;
-  font-size: 21px;
-  font-weight: 400;
-  padding: 20px;
-  margin: 20px;
+  color: #77777758;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 10px;
   display: flex;
 }
 
@@ -364,12 +342,6 @@ span {
 
   .encabezado__lista__item {
     margin: 0;
-    padding: 9px;
-  }
-
-  .logoIndex {
-    width: 70px;
-    height: 110px;
     padding: 9px;
   }
 
@@ -422,8 +394,12 @@ span {
     object-fit: contain;
   }
 
-  .pieMedia {
+  .pieMedia, .footer__lista {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .redesSociales {
+    padding: 10px;
   }
 }
