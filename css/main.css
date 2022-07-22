@@ -4,5 +4,6 @@ body {
 .contenidoPrincipal {
   background-color: tomato; }
 
-boton {
-  padding: 0 auto; }
+/* boton {
+    padding: $margin-auto;
+} */

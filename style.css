@@ -17,6 +17,10 @@ header {
   margin: 5px;
 }
 
+.activo, #link {
+  color: white;
+}
+
 h3, h4 {
   font-family: "Playfair Display", serif;
 }
@@ -223,6 +227,7 @@ h5 {
 
 .btn {
   background-color: #79112149;
+  color: white;
 }
 
 .btn:hover{
@@ -327,10 +332,6 @@ span {
 /* media query */
 
 @media screen and (max-width: 480px) {
-  .header {
-    background-color: #000000;
-  }
-
   .encabezado__lista {
     display: grid;
     grid-template-columns: 1fr 1fr;
