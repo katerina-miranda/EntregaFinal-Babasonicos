@@ -39,6 +39,68 @@ img {
   .nav-link.activo {
     color: #f5f5f5; }
 
+.resaltado {
+  background-color: #a6142ab4;
+  border-radius: 5px; }
+
+.footer {
+  background-color: #000000; }
+  .footer .footerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+  .footer .footer__lista {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto; }
+    .footer .footer__lista .redesSociales {
+      color: #791121;
+      padding: 20px;
+      font-style: normal; }
+      .footer .footer__lista .redesSociales:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+        color: #791121; }
+    .footer .footer__lista i a {
+      color: #414549;
+      text-decoration: none; }
+      .footer .footer__lista i a:hover {
+        color: #791121; }
+
+h5 {
+  color: #a6142a;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  padding: 12px;
+  font-weight: 400;
+  line-height: 24px; }
+
+p {
+  color: #414549;
+  padding: 0px 20px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: 0em; }
+
+#whatsapp {
+  width: 50px;
+  position: fixed;
+  right: 21px;
+  bottom: 21px; }
+
+span {
+  color: #77777758;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 10px;
+  display: flex; }
+
 .fondo {
   background-color: #a6142ad6;
   background-image: url(../imagenes/fondo1.jpg);
@@ -51,15 +113,34 @@ img {
     font-size: 3em;
     padding: 60px;
     margin: 20px; }
-    .fondo .subtitulo .textoCentrado {
-      color: #f5f5f5;
-      font-family: "Playfair Display", serif;
-      font-weight: 400;
-      font-size: 2em;
-      line-height: 1.42857143;
-      text-align: center;
-      text-shadow: 2px 2px #151515;
-      margin: 2em; }
+    .fondo .subtitulo h3 {
+      font-family: "Playfair Display", serif; }
+
+.textoCentrado {
+  color: #f5f5f5;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1.42857143;
+  text-align: center;
+  text-shadow: 2px 2px #151515;
+  margin: 2em; }
+
+.boton {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  height: 110px; }
+  .boton #link {
+    color: #f5f5f5;
+    text-decoration: none;
+    background-color: #3133357c;
+    border: solid 2px #791121;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px; }
+    .boton #link:hover {
+      background-color: #f5f5f569;
+      color: #151515; }
 
 .imagenTexto1 {
   display: flex; }
@@ -68,6 +149,11 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .imagenTexto1 .descripcion h4 {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0mm;
+      font-size: 1.5rem;
+      padding: 10px 50px 20px; }
 
 .imagenTexto2 {
   display: flex;

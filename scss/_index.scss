@@ -11,17 +11,42 @@
     font-size: 3em;
     padding: 60px;
     margin: 20px;
-  
-    .textoCentrado {
+
+    h3 {
+      font-family: $font-family;
+    } 
+  }
+}
+
+.textoCentrado {
       color: $color-secundario;
-      font-family: "Playfair Display", serif;
+      font-family: $font-family;
       font-weight: 400;
       font-size: 2em;
       line-height: 1.42857143;
       text-align: center;
-      text-shadow: 2px 2px #151515;
+      text-shadow: 2px 2px $color-terciario;
       margin: 2em;
-    }
+}
+
+.boton {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  height: 110px;
+
+  #link {
+    color: $color-secundario;
+    text-decoration: none;
+    background-color: #3133357c;
+    border: solid 2px $color-principal;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+
+    &:hover {
+      background-color: #f5f5f569;
+      color: $color-terciario;
+    } 
   }
 }
 
@@ -33,6 +58,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h4 {
+      font-family: $font-family;
+      letter-spacing: 0mm;
+      font-size: 1.5rem;
+      padding: 10px 50px 20px;
+    }
   }
 }
 

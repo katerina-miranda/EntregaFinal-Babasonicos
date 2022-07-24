@@ -50,3 +50,83 @@ img {
     color: $color-secundario;
   }
 }
+
+.resaltado {
+  background-color: #a6142ab4;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #000000;
+
+  .footerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer__lista {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+
+    .redesSociales {
+      color: #791121;
+      padding: 20px;
+      font-style: normal;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+        color:#791121;
+      }
+    }
+
+    i a {
+      color: #414549;
+      text-decoration: none;
+
+      &:hover {
+        color: #791121;
+      }
+    }
+  }
+}
+
+h5 {
+  color: #a6142a;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+  padding: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+p {
+  color: #414549;
+  padding: 0px 20px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+#whatsapp {
+  width: 50px;
+  position: fixed;
+  right: 21px;
+  bottom: 21px;
+}
+
+span {
+  color: #77777758;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+}
