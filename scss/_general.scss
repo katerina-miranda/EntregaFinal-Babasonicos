@@ -15,8 +15,8 @@ body {
 .encabezado {
   background-color: $color-secundario;
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(166, 20, 42, 1) 60%);
-  border-radius: $boton-radio;
-  margin: 5px;
+  border-radius: map-get($tamanios, "px");
+  margin: map-get($tamanios, "box");
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -38,8 +38,8 @@ img {
 }
 
 .nav-link {
-  padding: 5px;
-  margin: 5px;
+  padding: map-get($tamanios, "box");
+  margin: map-get($tamanios, "box");
   font: {
     size: 1.3rem;
     weight: 500;
@@ -58,7 +58,7 @@ img {
 
 .resaltado {
   background-color: #a6142ab4;
-  border-radius: 5px;
+  border-radius: map-get($tamanios, "box");
 }
 
 .primerParrafo {
@@ -81,14 +81,14 @@ img {
     margin: auto;
 
     .redesSociales {
-      color: #791121;
-      padding: 20px;
+      color: $color-principal;
+      padding: map-get($tamanios, "px");
       font-style: normal;
 
       &:hover {
         transform: scale(1.2);
         transition: all 1s;
-        color:#791121;
+        color: $color-principal;
       }
     }
 
@@ -97,7 +97,7 @@ img {
       text-decoration: none;
 
       &:hover {
-        color: #791121;
+        color: $color-principal;
       }
     }
   }
@@ -105,14 +105,17 @@ img {
 
 h5 {
   color: #a6142a;
-  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5px;
+  margin: map-get($tamanios, "box");
   padding: 12px;
-  font-weight: 400;
   line-height: 24px;
+
+  font: {
+    size: map-get($tamanios, "px");
+    weight: 400;
+  }
 }
 
 p {
@@ -135,9 +138,12 @@ p {
 
 span {
   color: $color-footer;
-  font-size: 15px;
-  font-weight: 100;
   padding: 10px;
   margin: 10px;
   display: flex;
+
+  font: {
+    size: 15px;
+    weight: 100;
+  }
 }

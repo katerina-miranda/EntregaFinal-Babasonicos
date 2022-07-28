@@ -1,7 +1,7 @@
 .h1 {
   text-align: center;
-  margin: 5px;
-  padding: 20px;
+  margin: map-get($tamanios, "box");
+  padding: map-get($tamanios, "px");
   font-size: 30px;
   background: radial-gradient(circle, rgba(166,20,42,1) 10%, rgba(255,255,255,1) 35%);
 
@@ -31,7 +31,7 @@
 }
 
 .videos {
-  margin: 90px;
+  margin: 26px;
   display: flex;
   justify-content:space-around;
 

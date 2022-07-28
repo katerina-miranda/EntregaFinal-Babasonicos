@@ -10,7 +10,7 @@ body {
 .encabezado {
   background-color: #f5f5f5;
   background: linear-gradient(90deg, white 20%, #a6142a 60%);
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 5px;
   position: sticky;
   top: 0px;
@@ -73,14 +73,14 @@ img {
 
 h5 {
   color: #a6142a;
-  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 5px;
   padding: 12px;
-  font-weight: 400;
-  line-height: 24px; }
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400; }
 
 p {
   color: #414549;
@@ -98,11 +98,11 @@ p {
 
 span {
   color: #77777758;
-  font-size: 15px;
-  font-weight: 100;
   padding: 10px;
   margin: 10px;
-  display: flex; }
+  display: flex;
+  font-size: 15px;
+  font-weight: 100; }
 
 .fondo {
   background-color: #a6142ad6;
@@ -111,36 +111,36 @@ span {
   background-size: cover; }
   .fondo .subtitulo {
     color: #f5f5f5;
-    text-shadow: 2px 2px #151515;
-    text-align: center;
     font-size: 3em;
     padding: 60px;
-    margin: 20px; }
+    margin: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #151515; }
     .fondo .subtitulo h3 {
       font-family: "Playfair Display", serif; }
 
 .textoCentrado {
   color: #f5f5f5;
+  line-height: 1.42857143;
+  margin: 2em;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 2em;
-  line-height: 1.42857143;
   text-align: center;
-  text-shadow: 2px 2px #151515;
-  margin: 2em; }
+  text-shadow: 2px 2px #151515; }
 
 .boton {
-  font-size: 1.25rem;
-  font-weight: 400;
   text-align: center;
-  height: 110px; }
+  height: 110px;
+  font-size: 1.25rem;
+  font-weight: 400; }
   .boton #link {
     color: #f5f5f5;
     text-decoration: none;
     background-color: #3133357c;
     border: solid 2px #791121;
     border-radius: 5px;
-    padding: 20px 20px 20px 20px; }
+    padding: 20px; }
     .boton #link:hover {
       background-color: #f5f5f569;
       color: #151515;
@@ -155,10 +155,10 @@ span {
     flex-direction: column;
     justify-content: center; }
     .imagenTexto1 .descripcion h4 {
-      font-family: "Playfair Display", serif;
       letter-spacing: 0mm;
-      font-size: 1.5rem;
-      padding: 10px 50px 20px; }
+      padding: 10px 50px 20px;
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem; }
 
 .imagenTexto2 {
   display: flex;
@@ -169,10 +169,10 @@ span {
     flex-direction: column;
     justify-content: center; }
     .imagenTexto2 .descripcion h4 {
-      font-family: "Playfair Display", serif;
       letter-spacing: 0mm;
-      font-size: 1.5rem;
-      padding: 10px 50px 20px; }
+      padding: 10px 50px 20px;
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem; }
 
 .imagen1, .imagen2 {
   width: 350px;
@@ -206,12 +206,15 @@ span {
       transition: all 1s; }
 
 .videos {
-  margin: 90px;
+  margin: 26px;
   display: flex;
   justify-content: space-around; }
   .videos iframe {
     width: 600px;
     height: 400px; }
+
+.container {
+  margin-bottom: 30px; }
 
 .col {
   background-color: #7d3e4885;
@@ -238,3 +241,16 @@ span {
       color: #f5f5f5; }
       .formulario .botonForm .btn:hover {
         background-color: #791121; }
+
+.ubicacionMapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .ubicacionMapa .logoUbicacion {
+    width: 50px;
+    height: 50px;
+    margin-left: 0; }
+
+.mapa {
+  width: 100%;
+  height: 600px; }
