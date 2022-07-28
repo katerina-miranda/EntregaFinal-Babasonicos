@@ -212,3 +212,29 @@ span {
   .videos iframe {
     width: 600px;
     height: 400px; }
+
+.col {
+  background-color: #7d3e4885;
+  padding: 10px 10px;
+  margin: 1%; }
+
+.negrita {
+  font-weight: 800;
+  color: #791121; }
+
+.formulario {
+  padding: 5%;
+  margin: 0px 10%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #7d3e48;
+  border-radius: 25px; }
+  .formulario .botonForm {
+    display: flex;
+    justify-content: center; }
+    .formulario .botonForm .btn {
+      background-color: #79112149;
+      color: #f5f5f5; }
+      .formulario .botonForm .btn:hover {
+        background-color: #791121; }
