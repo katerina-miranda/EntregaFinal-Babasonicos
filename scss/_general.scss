@@ -149,17 +149,11 @@ span {
   }
 }
 
-@media screen and (max-widht: 480px) {
-  .subtitulo {
-    padding: 0;
-  } 
-
-  .pieMedia, .footer__lista {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .redesSociales {
-    padding: 10px;
+@media screen and (max-width: 480px) {
+  .footer {
+    .pieMedia, .footer__lista {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 }

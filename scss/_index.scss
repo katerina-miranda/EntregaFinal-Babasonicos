@@ -119,11 +119,31 @@
   }
 }
 
-@media screen and (max-widht: 480px) {
+h4 {
+  text-align: center;
+}
+
+.descripcion p {
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen1, .imagen2 {
+    height: fit-content;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .fondo {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-evenly;
+
+    .subtitulo {
+      padding: 0;
+    } 
   }
 
   .textoCentrado {
