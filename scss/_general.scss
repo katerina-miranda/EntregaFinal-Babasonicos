@@ -1,6 +1,5 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  @include boxes (0px, 0px);
 }
 
 body {
@@ -15,7 +14,6 @@ body {
 .encabezado {
   background-color: $color-secundario;
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(166, 20, 42, 1) 60%);
-  border-radius: map-get($tamanios, "px");
   margin: map-get($tamanios, "box");
   position: sticky;
   top: 0px;
@@ -38,8 +36,7 @@ img {
 }
 
 .nav-link {
-  padding: map-get($tamanios, "box");
-  margin: map-get($tamanios, "box");
+  @include boxes (5px, 5px);
   
   font: {
     size: 1.3rem;
@@ -60,6 +57,18 @@ img {
 .resaltado {
   background-color: #a6142ab4;
   border-radius: map-get($tamanios, "box");
+}
+
+.h1 {
+  @include boxes (5px, 20px);
+  text-align: map-get($box, "centro");
+  font-size: 30px;
+  background: radial-gradient(circle, rgba(166,20,42,1) 10%, rgba(255,255,255,1) 35%);
+
+  &:hover {
+    transform: scale(1) rotateX(360deg);
+    transition: all 5s;
+  }
 }
 
 .primerParrafo {
@@ -94,7 +103,7 @@ img {
     }
 
     i a {
-      color: #414549;
+      color: #555a5f;
       text-decoration: none;
 
       &:hover {
@@ -105,12 +114,11 @@ img {
 }
 
 h5 {
+  @include boxes (5px, 12px);
   color: #a6142a;
   display: map-get($box, "display");
   flex-direction: row;
   justify-content: map-get($box, "centro");
-  margin: map-get($tamanios, "box");
-  padding: 12px;
   line-height: 24px;
 
   font: {
@@ -120,7 +128,7 @@ h5 {
 }
 
 p {
-  color: #414549;
+  color: #555a5f;
   padding: 0px 20px;
   line-height: 24px;
   letter-spacing: 0;
@@ -138,9 +146,8 @@ p {
 }
 
 span {
+  @include boxes (10px, 10px);
   color: $color-footer;
-  padding: 10px;
-  margin: 10px;
   display: map-get($box, "display");
 
   font: {
