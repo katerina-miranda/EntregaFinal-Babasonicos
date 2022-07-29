@@ -33,13 +33,14 @@ img {
 }
 
 .collapse {
-  display: flex;
+  display: map-get($box, "display");
   justify-content: flex-end;
 }
 
 .nav-link {
   padding: map-get($tamanios, "box");
   margin: map-get($tamanios, "box");
+  
   font: {
     size: 1.3rem;
     weight: 500;
@@ -62,7 +63,7 @@ img {
 }
 
 .primerParrafo {
-  text-align: center;
+  text-align: map-get($box, "centro");
 }
 
 .footer {
@@ -75,9 +76,9 @@ img {
 
   .footer__lista {
     width: 90%;
-    display: flex;
+    display: map-get($box, "display");
     flex-direction: row;
-    justify-content: center;
+    justify-content: map-get($box, "centro");
     margin: auto;
 
     .redesSociales {
@@ -105,9 +106,9 @@ img {
 
 h5 {
   color: #a6142a;
-  display: flex;
+  display: map-get($box, "display");
   flex-direction: row;
-  justify-content: center;
+  justify-content: map-get($box, "centro");
   margin: map-get($tamanios, "box");
   padding: 12px;
   line-height: 24px;
@@ -140,10 +141,25 @@ span {
   color: $color-footer;
   padding: 10px;
   margin: 10px;
-  display: flex;
+  display: map-get($box, "display");
 
   font: {
     size: 15px;
     weight: 100;
+  }
+}
+
+@media screen and (max-widht: 480px) {
+  .subtitulo {
+    padding: 0;
+  } 
+
+  .pieMedia, .footer__lista {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .redesSociales {
+    padding: 10px;
   }
 }

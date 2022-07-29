@@ -2,14 +2,14 @@
   padding: 5%;
   margin: 0px 10%;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  display: map-get($box, "display");
+  flex-direction: map-get($box, "linea");
   background-color: #7d3e48;
   border-radius: 25px;
 
   .botonForm {
-    display: flex;
-    justify-content: center;
+    display: map-get($box, "display");
+    justify-content: map-get($box, "centro");
 
     .btn {
       background-color: #79112149;
