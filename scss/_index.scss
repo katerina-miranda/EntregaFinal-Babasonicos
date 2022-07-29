@@ -104,37 +104,3 @@
   padding: 0;
   text-align: center;
 }
-
-@media screen and (max-width: 768px) {
-  .imagen1, .imagen2 {
-    height: fit-content;
-    margin: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .fondo {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-evenly;
-
-    .subtitulo {
-      padding: 0;
-    } 
-  }
-  
-  .textoCentrado {
-    font-size: 1.3em;
-  }
-
-  .imagenTexto1, .imagenTexto2, .grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .imagen1, .imagen2 {
-    margin: 0 auto;
-    width: 250px;
-    padding: 15px;
-  }
-}
