@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Maps */
 /* Extends */
 .descripcion, .imagenTexto1 .descripcion, .imagenTexto2 .descripcion, .ubicacionMapa {
   display: flex;
@@ -21,6 +23,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px; }
 
+/* Header */
 .encabezado {
   background-color: #f5f5f5;
   background: linear-gradient(90deg, white 20%, #a6142a 60%);
@@ -69,6 +72,7 @@ img {
 .primerParrafo {
   text-align: center; }
 
+/* Footer */
 .footer {
   background-color: #000000; }
   .footer .footerSection {
@@ -127,6 +131,7 @@ span {
   font-size: 15px;
   font-weight: 100; }
 
+/* Index */
 .fondo {
   background-color: #a6142ad6;
   background-image: url(../imagenes/fondo1.jpg);
@@ -188,6 +193,7 @@ span {
   padding: 0;
   text-align: center; }
 
+/* Galería */
 .carousel {
   background-color: rgba(128, 128, 128, 0.422); }
 
@@ -199,6 +205,7 @@ span {
     width: 600px;
     height: 400px; }
 
+/* Carta */
 .container {
   margin-bottom: 30px; }
 
@@ -211,6 +218,7 @@ span {
   font-weight: 800;
   color: #791121; }
 
+/* Contacto */
 .formulario {
   padding: 5%;
   margin: 0px 10%;
@@ -228,6 +236,7 @@ span {
       .formulario .botonForm .btn:hover {
         background-color: #791121; }
 
+/* Ubicación */
 .ubicacionMapa {
   align-items: center; }
   .ubicacionMapa .logoUbicacion {

@@ -11,6 +11,8 @@ body {
   }
 }
 
+/* Header */
+
 .encabezado {
   background-color: $color-secundario;
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(166, 20, 42, 1) 60%);
@@ -74,6 +76,8 @@ img {
 .primerParrafo {
   text-align: map-get($box, "centro");
 }
+
+/* Footer */
 
 .footer {
   background-color: #000000;
