@@ -2,25 +2,6 @@
   background-color: rgba(128, 128, 128, 0.438);
 }
 
-/* .galeriaImagenes {
-  width: 85%;
-  overflow-x: scroll;
-  display: map-get($box, "display");
-  flex-wrap: nowrap;
-  margin: 0 auto; */
-
-  /* .imagen3 {
-    width: 350px;
-    object-fit: contain;
-    margin: 0px 10px;
-  
-    &:hover {
-      transform: scale(0.9);
-      transition: all 1s;
-    }
-  }
-} */
-
 .videos {
   margin: 26px;
   display: map-get($box, "display");
