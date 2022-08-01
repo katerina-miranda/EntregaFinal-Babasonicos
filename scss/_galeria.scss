@@ -1,13 +1,17 @@
-.galeriaImagenes {
+.carousel {
+  background-color: rgba(128, 128, 128, 0.438);
+}
+
+/* .galeriaImagenes {
   width: 85%;
   overflow-x: scroll;
   display: map-get($box, "display");
   flex-wrap: nowrap;
-  margin: 0 auto;
+  margin: 0 auto; */
 
-  .imagen3 {
+  /* .imagen3 {
     width: 350px;
-    object-fit: cover;
+    object-fit: contain;
     margin: 0px 10px;
   
     &:hover {
@@ -15,7 +19,7 @@
       transition: all 1s;
     }
   }
-}
+} */
 
 .videos {
   margin: 26px;
