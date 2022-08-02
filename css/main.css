@@ -27,7 +27,7 @@ body {
 .encabezado {
   background-color: #f5f5f5;
   background: linear-gradient(90deg, white 20%, #a6142a 60%);
-  margin: 5px;
+  margin: 0px;
   position: sticky;
   top: 0px;
   z-index: 1; }
@@ -46,6 +46,7 @@ img {
 .nav-link {
   margin: 5px;
   padding: 5px;
+  color: #F48484;
   font-size: 1.3rem;
   font-weight: 500; }
   .nav-link:hover {

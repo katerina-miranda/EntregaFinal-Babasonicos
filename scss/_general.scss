@@ -16,7 +16,7 @@ body {
 .encabezado {
   background-color: $color-secundario;
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(166, 20, 42, 1) 60%);
-  margin: map-get($tamanios, "box");
+  margin: 0px;
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -39,6 +39,7 @@ img {
 
 .nav-link {
   @include boxes (5px, 5px);
+  color: #F48484;
   
   font: {
     size: 1.3rem;
