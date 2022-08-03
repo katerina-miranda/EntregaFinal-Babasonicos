@@ -26,7 +26,7 @@ body {
 /* Header */
 .encabezado {
   background-color: #f5f5f5;
-  background: linear-gradient(90deg, white 20%, #a6142a 60%);
+  background: linear-gradient(90deg, #f4f4f4 0%, #791121 59%);
   margin: 0px;
   position: sticky;
   top: 0px;
@@ -64,14 +64,18 @@ img {
   margin: 5px;
   padding: 20px;
   text-align: center;
+  color: #f5f5f5;
   font-size: 30px;
-  background: radial-gradient(circle, #a6142a 10%, white 35%); }
+  background: linear-gradient(90deg, #f4f4f4 0%, #791121 50%, #f4f4f4 100%); }
   .h1:hover {
     transform: scale(1) rotateX(360deg);
     transition: all 5s; }
 
 .primerParrafo {
-  text-align: center; }
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: #151515; }
 
 /* Footer */
 .footer {
@@ -112,6 +116,7 @@ h5 {
 
 p {
   color: #555a5f;
+  margin: 10px;
   padding: 0px 20px;
   line-height: 24px;
   letter-spacing: 0;
@@ -198,13 +203,14 @@ span {
 .carousel {
   background-color: rgba(128, 128, 128, 0.422); }
 
-.videos {
-  margin: 26px;
+.videos article {
   display: flex;
-  justify-content: space-around; }
-  .videos iframe {
-    width: 600px;
-    height: 400px; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .videos article p {
+    color: #151515;
+    margin: 20px 0px; }
 
 /* Carta */
 .container {
@@ -249,14 +255,18 @@ span {
   width: 100%;
   height: 600px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .imagen1, .imagen2 {
     height: fit-content;
     margin: 20px; }
   .videos {
-    display: grid;
-    justify-content: center;
-    margin-top: 40px; } }
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .videos iframe {
+      width: 350px;
+      height: 200px;
+      margin: 10px; } }
 
 @media screen and (max-width: 480px) {
   .fondo {

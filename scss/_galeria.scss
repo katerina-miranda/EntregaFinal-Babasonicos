@@ -5,12 +5,16 @@
 }
 
 .videos {
-  margin: 26px;
-  display: map-get($box, "display");
-  justify-content: space-around;
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 
-  iframe {
-    width: 600px;
-    height: 400px;
+    p {
+      color: $color-terciario;
+      margin: 20px 0px;
+    }
   }
 }

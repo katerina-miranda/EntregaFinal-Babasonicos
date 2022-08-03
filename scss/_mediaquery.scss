@@ -1,13 +1,19 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .imagen1, .imagen2 {
     height: fit-content;
     margin: 20px;
   }
 
   .videos {
-    display: grid;
+    display: flex;
+    align-content: center;
     justify-content: center;
-    margin-top: 40px;
+
+    iframe {
+      width: 350px;
+      height: 200px;
+      margin: 10px;
+    }
   }
 }
 

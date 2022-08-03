@@ -15,7 +15,7 @@ body {
 
 .encabezado {
   background-color: $color-secundario;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(166, 20, 42, 1) 60%);
+  background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 59%);
   margin: 0px;
   position: sticky;
   top: 0px;
@@ -65,8 +65,9 @@ img {
 .h1 {
   @include boxes (5px, 20px);
   text-align: map-get($box, "centro");
+  color: $color-secundario;
   font-size: 30px;
-  background: radial-gradient(circle, rgba(166,20,42,1) 10%, rgba(255,255,255,1) 35%);
+  background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 50%, rgba(244,244,244,1) 100%);
 
   &:hover {
     transform: scale(1) rotateX(360deg);
@@ -76,6 +77,9 @@ img {
 
 .primerParrafo {
   text-align: map-get($box, "centro");
+  margin: 10px;
+  padding: 10px;
+  color: $color-terciario;
 }
 
 /* Footer */
@@ -134,6 +138,7 @@ h5 {
 
 p {
   color: #555a5f;
+  margin: 10px;
   padding: 0px 20px;
   line-height: 24px;
   letter-spacing: 0;
