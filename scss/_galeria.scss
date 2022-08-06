@@ -5,6 +5,9 @@
 }
 
 .videos {
+  display: flex;
+  flex-direction: row;
+
   article {
     display: flex;
     flex-direction: column;

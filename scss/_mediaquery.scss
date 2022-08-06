@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {
     height: fit-content;
     margin: 20px;
@@ -44,9 +44,15 @@
   }
 
   .footer {
-    .pieMedia, .footer__lista {
+    .pieMedia {
       display: grid;
       grid-template-columns: 1fr;
+    }
+
+    .footer__lista {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
     }
   }
 

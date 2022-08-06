@@ -92,12 +92,13 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .footer__lista {
+  &__lista {
     width: 90%;
     display: map-get($box, "display");
     flex-direction: row;
     justify-content: map-get($box, "centro");
     margin: auto;
+    padding: 0;
 
     .redesSociales {
       color: $color-principal;

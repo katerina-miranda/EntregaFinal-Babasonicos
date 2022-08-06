@@ -83,24 +83,25 @@ img {
   .footer .footerSection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
-  .footer .footer__lista {
+  .footer__lista {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: auto; }
-    .footer .footer__lista .redesSociales {
+    margin: auto;
+    padding: 0; }
+    .footer__lista .redesSociales {
       color: #791121;
       padding: 20px;
       font-style: normal; }
-      .footer .footer__lista .redesSociales:hover {
+      .footer__lista .redesSociales:hover {
         transform: scale(1.2);
         transition: all 1s;
         color: #791121; }
-    .footer .footer__lista i a {
+    .footer__lista i a {
       color: #555a5f;
       text-decoration: none; }
-      .footer .footer__lista i a:hover {
+      .footer__lista i a:hover {
         color: #791121; }
 
 h5 {
@@ -203,14 +204,17 @@ span {
 .carousel {
   background-color: rgba(128, 128, 128, 0.422); }
 
-.videos article {
+.videos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .videos article p {
-    color: #151515;
-    margin: 20px 0px; }
+  flex-direction: row; }
+  .videos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .videos article p {
+      color: #151515;
+      margin: 20px 0px; }
 
 /* Carta */
 .container {
@@ -255,7 +259,7 @@ span {
   width: 100%;
   height: 600px; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {
     height: fit-content;
     margin: 20px; }
@@ -284,9 +288,13 @@ span {
     margin: 0 auto;
     width: 250px;
     padding: 15px; }
-  .footer .pieMedia, .footer .footer__lista {
+  .footer .pieMedia {
     display: grid;
     grid-template-columns: 1fr; }
+  .footer .footer__lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
   .videos {
     display: grid;
     grid-template-columns: 1fr;
