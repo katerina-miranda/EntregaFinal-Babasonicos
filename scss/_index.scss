@@ -53,13 +53,13 @@
   #link {
     color: $color-secundario;
     text-decoration: none;
-    background-color: #3133357c;
+    background-color: $index-btn;
     border: solid 2px $color-principal;
     border-radius: 5px;
     padding: map-get($tamanios, "px");
 
     &:hover {
-      background-color: #f5f5f569;
+      background-color: $index-btn-h;
       color: $color-terciario;
       transform: scale(1.2);
       transition: all 1s;

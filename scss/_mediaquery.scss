@@ -19,8 +19,7 @@
 
 @media screen and (max-width: 480px) {
   .fondo {
-    display: grid;
-    grid-template-columns: 1fr;
+    @include grid (grid, 1fr);
     justify-content: space-evenly;
     
     .subtitulo {
@@ -33,32 +32,27 @@
   }
     
   .imagenTexto1, .imagenTexto2, .grid {
-    display: flex;
-    flex-direction: column;
+    @include flex (flex, column);
   }
     
   .imagen1, .imagen2 {
-    margin: 0 auto;
+    @include boxes (0auto, 15px);
     width: 250px;
-    padding: 15px;
   }
 
   .footer {
     .pieMedia {
-      display: grid;
-      grid-template-columns: 1fr;
+      @include grid (grid, 1fr);
     }
 
     .footer__lista {
-      display: grid;
-      grid-template-columns: 1fr;
+      @include grid (grid, 1fr);
       justify-items: center;
     }
   }
 
   .videos {
-    display: grid;
-    grid-template-columns: 1fr;
+    @include grid (grid, 1fr);
     margin: 20px;
 
     iframe {

@@ -15,7 +15,7 @@ body {
 
 .encabezado {
   background-color: $color-secundario;
-  background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 59%);
+  background: $gradiente-encabezado;
   margin: 0px;
   position: sticky;
   top: 0px;
@@ -39,7 +39,7 @@ img {
 
 .nav-link {
   @include boxes (5px, 5px);
-  color: #F48484;
+  color: $link-desabilitado;
   
   font: {
     size: 1.3rem;
@@ -58,7 +58,7 @@ img {
 }
 
 .resaltado {
-  background-color: #a6142ab4;
+  background-color: $resaltado;
   border-radius: map-get($tamanios, "box");
 }
 
@@ -67,7 +67,7 @@ img {
   text-align: map-get($box, "centro");
   color: $color-secundario;
   font-size: 30px;
-  background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 50%, rgba(244,244,244,1) 100%);
+  background: $gradiente-h1;
 
   &:hover {
     transform: scale(1) rotateX(360deg);
@@ -76,16 +76,15 @@ img {
 }
 
 .primerParrafo {
+  @include boxes (10px, 10px);
   text-align: map-get($box, "centro");
-  margin: 10px;
-  padding: 10px;
   color: $color-terciario;
 }
 
 /* Footer */
 
 .footer {
-  background-color: #000000;
+  background-color: $fondo-footer;
 
   .footerSection {
     display: grid;
@@ -93,12 +92,11 @@ img {
   }
 
   &__lista {
+    @include boxes (auto, 0);
     width: 90%;
     display: map-get($box, "display");
     flex-direction: row;
     justify-content: map-get($box, "centro");
-    margin: auto;
-    padding: 0;
 
     .redesSociales {
       color: $color-principal;
@@ -113,7 +111,7 @@ img {
     }
 
     i a {
-      color: #555a5f;
+      color: $letras-footer;
       text-decoration: none;
 
       &:hover {
@@ -125,10 +123,9 @@ img {
 
 h5 {
   @include boxes (5px, 12px);
-  color: #a6142a;
-  display: map-get($box, "display");
-  flex-direction: row;
+  @include flex (flex, row);
   justify-content: map-get($box, "centro");
+  color: $resaltado;
   line-height: 24px;
 
   font: {
@@ -138,11 +135,11 @@ h5 {
 }
 
 p {
-  color: #555a5f;
-  margin: 10px;
-  padding: 0px 20px;
+  @include boxes (10px, 0px 20px);
+  color: $letras-footer;
   line-height: 24px;
   letter-spacing: 0;
+  
   font: {
     weight: 400;
     size: 21px;

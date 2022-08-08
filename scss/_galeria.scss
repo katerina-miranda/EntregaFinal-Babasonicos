@@ -5,16 +5,12 @@
 }
 
 .videos {
-  display: flex;
-  flex-direction: row;
+  @include flex (flex, row);
 
   article {
-    display: flex;
-    flex-direction: column;
+    @extend .descripcion;
     align-items: center;
-    justify-content: center;
     
-
     p {
       color: $color-terciario;
       margin: 20px 0px;

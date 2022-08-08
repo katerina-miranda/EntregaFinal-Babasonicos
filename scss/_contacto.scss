@@ -6,7 +6,7 @@
   margin-bottom: 20px;
   display: map-get($box, "display");
   flex-direction: map-get($box, "linea");
-  background-color: #7d3e48;
+  background-color: $color-form;
   border-radius: 25px;
 
   .botonForm {
@@ -14,7 +14,7 @@
     justify-content: map-get($box, "centro");
 
     .btn {
-      background-color: #79112149;
+      background-color: $boton-form;
       color: $color-secundario;
 
       &:hover{

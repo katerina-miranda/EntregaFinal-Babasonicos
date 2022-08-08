@@ -1,7 +1,18 @@
 $color-principal: #791121;
 $color-secundario: #f5f5f5;
 $color-terciario: #151515;
+$link-desabilitado: #f48484;
+$gradiente-encabezado: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 59%);
+$gradiente-h1: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 50%, rgba(244,244,244,1) 100%);
+$index-btn: #6b54547c;
+$index-btn-h: #f5f5f5ae;
+$resaltado: #a6142ab4;
+$color-cols: #7d3e4885;
+$color-form: #7d3e48;
+$boton-form: #79112149;
 $color-footer: #77777758;
+$letras-footer: #555a5f;
+$fondo-footer: #000000;
 
 $font-family: "Playfair Display", serif;
 
@@ -39,4 +50,14 @@ h4 {
 @mixin boxes ($margin, $padding) {
   margin: $margin;
   padding: $padding;
+}
+
+@mixin flex ($display, $direction) {
+  display: $display;
+  flex-direction: $direction;
+}
+
+@mixin grid ($display, $grid-template-columns) {
+  display: $display;
+  grid-template-columns: $grid-template-columns;
 }

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* Maps */
 /* Extends */
-.descripcion, .imagenTexto1 .descripcion, .imagenTexto2 .descripcion, .ubicacionMapa {
+.descripcion, .imagenTexto1 .descripcion, .imagenTexto2 .descripcion, .videos article, .ubicacionMapa {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-h4, .imagenTexto1 .descripcion h4, .imagenTexto1 .ubicacionMapa h4, .imagenTexto2 .descripcion h4, .imagenTexto2 .ubicacionMapa h4 {
+h4, .imagenTexto1 .descripcion h4, .imagenTexto1 .videos article h4, .videos .imagenTexto1 article h4, .imagenTexto1 .ubicacionMapa h4, .imagenTexto2 .descripcion h4, .imagenTexto2 .videos article h4, .videos .imagenTexto2 article h4, .imagenTexto2 .ubicacionMapa h4 {
   letter-spacing: 0mm;
   padding: 10px 50px 20px;
   font-family: "Playfair Display", serif;
@@ -46,7 +46,7 @@ img {
 .nav-link {
   margin: 5px;
   padding: 5px;
-  color: #F48484;
+  color: #f48484;
   font-size: 1.3rem;
   font-weight: 500; }
   .nav-link:hover {
@@ -72,9 +72,9 @@ img {
     transition: all 5s; }
 
 .primerParrafo {
-  text-align: center;
   margin: 10px;
   padding: 10px;
+  text-align: center;
   color: #151515; }
 
 /* Footer */
@@ -84,12 +84,12 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
   .footer__lista {
+    margin: auto;
+    padding: 0;
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    padding: 0; }
+    justify-content: center; }
     .footer__lista .redesSociales {
       color: #791121;
       padding: 20px;
@@ -107,18 +107,18 @@ img {
 h5 {
   margin: 5px;
   padding: 12px;
-  color: #a6142a;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: #a6142ab4;
   line-height: 24px;
   font-size: 20px;
   font-weight: 400; }
 
 p {
-  color: #555a5f;
   margin: 10px;
   padding: 0px 20px;
+  color: #555a5f;
   line-height: 24px;
   letter-spacing: 0;
   font-weight: 400;
@@ -172,12 +172,12 @@ span {
   .boton #link {
     color: #f5f5f5;
     text-decoration: none;
-    background-color: #3133357c;
+    background-color: #6b54547c;
     border: solid 2px #791121;
     border-radius: 5px;
     padding: 20px; }
     .boton #link:hover {
-      background-color: #f5f5f569;
+      background-color: #f5f5f5ae;
       color: #151515;
       transform: scale(1.2);
       transition: all 1s; }
@@ -196,7 +196,7 @@ span {
     transform: scale(1.1);
     transition: all 2s; }
 
-.descripcion p, .imagenTexto1 .descripcion p, .imagenTexto2 .descripcion p, .ubicacionMapa p {
+.descripcion p, .imagenTexto1 .descripcion p, .imagenTexto2 .descripcion p, .videos article p, .ubicacionMapa p {
   padding: 0;
   text-align: center; }
 
@@ -208,10 +208,7 @@ span {
   display: flex;
   flex-direction: row; }
   .videos article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    align-items: center; }
     .videos article p {
       color: #151515;
       margin: 20px 0px; }
@@ -221,9 +218,9 @@ span {
   margin-bottom: 30px; }
 
 .col {
-  background-color: #7d3e4885;
+  margin: 1%;
   padding: 10px 10px;
-  margin: 1%; }
+  background-color: #7d3e4885; }
 
 .negrita {
   font-weight: 800;
@@ -285,9 +282,9 @@ span {
     display: flex;
     flex-direction: column; }
   .imagen1, .imagen2 {
-    margin: 0 auto;
-    width: 250px;
-    padding: 15px; }
+    margin: 0auto;
+    padding: 15px;
+    width: 250px; }
   .footer .pieMedia {
     display: grid;
     grid-template-columns: 1fr; }
