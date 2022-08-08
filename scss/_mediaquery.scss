@@ -33,6 +33,7 @@
     
   .imagenTexto1, .imagenTexto2, .grid {
     @include flex (flex, column);
+    align-items: center;
   }
     
   .imagen1, .imagen2 {

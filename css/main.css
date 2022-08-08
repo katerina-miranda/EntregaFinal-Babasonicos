@@ -280,7 +280,8 @@ span {
     font-size: 1.3em; }
   .imagenTexto1, .imagenTexto2, .grid {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .imagen1, .imagen2 {
     margin: 0auto;
     padding: 15px;
