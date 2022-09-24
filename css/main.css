@@ -200,6 +200,19 @@ span {
   padding: 0;
   text-align: center; }
 
+/* Carta */
+.container {
+  margin-bottom: 30px; }
+
+.col {
+  margin: 1%;
+  padding: 10px 10px;
+  background-color: #7d3e4885; }
+
+.negrita {
+  font-weight: 800;
+  color: #791121; }
+
 /* Galería */
 .carousel {
   background-color: rgba(128, 128, 128, 0.422); }
@@ -213,18 +226,17 @@ span {
       color: #151515;
       margin: 20px 0px; }
 
-/* Carta */
-.container {
-  margin-bottom: 30px; }
+/* Ubicación */
+.ubicacionMapa {
+  align-items: center; }
+  .ubicacionMapa .logoUbicacion {
+    width: 50px;
+    height: 50px;
+    margin-left: 0; }
 
-.col {
-  margin: 1%;
-  padding: 10px 10px;
-  background-color: #7d3e4885; }
-
-.negrita {
-  font-weight: 800;
-  color: #791121; }
+.mapa {
+  width: 100%;
+  height: 600px; }
 
 /* Contacto */
 .formulario {
@@ -243,18 +255,6 @@ span {
       color: #f5f5f5; }
       .formulario .botonForm .btn:hover {
         background-color: #791121; }
-
-/* Ubicación */
-.ubicacionMapa {
-  align-items: center; }
-  .ubicacionMapa .logoUbicacion {
-    width: 50px;
-    height: 50px;
-    margin-left: 0; }
-
-.mapa {
-  width: 100%;
-  height: 600px; }
 
 @media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {
