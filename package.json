@@ -1,7 +1,7 @@
 {
-  "name": "cincinnati",
+  "name": "Babasónicos",
   "version": "1.0.0",
-  "description": "restaurante italiano",
+  "description": "Babasónicos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katerina-miranda/proyectofinal-cincinnati.git"
+    "url": "git+https://github.com/katerina-miranda/proyectofinal-babasonicos.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katerina-miranda/proyectofinal-cincinnati/issues"
+    "url": "https://github.com/katerina-miranda/proyectofinal-babasonicos/issues"
   },
-  "homepage": "https://github.com/katerina-miranda/proyectofinal-cincinnati#readme",
+  "homepage": "https://github.com/katerina-miranda/proyectofinal-babsonicos#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
