@@ -1,0 +1,25 @@
+/* Contacto */
+
+.formulario {
+  padding: 5%;
+  margin: 0px 10%;
+  margin-bottom: 20px;
+  display: map-get($box, "display");
+  flex-direction: map-get($box, "linea");
+  background-color: $color-form;
+  border-radius: 25px;
+
+  .botonForm {
+    display: map-get($box, "display");
+    justify-content: map-get($box, "centro");
+
+    .btn {
+      background-color: $boton-form;
+      color: $color-secundario;
+
+      &:hover{
+        background-color: $color-principal;
+      }
+    }
+  }
+}

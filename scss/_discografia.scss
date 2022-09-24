@@ -1,25 +1,19 @@
-/* Contacto */
+/* Galería */
 
-.formulario {
-  padding: 5%;
-  margin: 0px 10%;
-  margin-bottom: 20px;
-  display: map-get($box, "display");
-  flex-direction: map-get($box, "linea");
-  background-color: $color-form;
-  border-radius: 25px;
+.carousel {
+  background-color: rgba(128, 128, 128, 0.422);
+}
 
-  .botonForm {
-    display: map-get($box, "display");
-    justify-content: map-get($box, "centro");
+.videos {
+  @include flex (flex, row);
 
-    .btn {
-      background-color: $boton-form;
-      color: $color-secundario;
-
-      &:hover{
-        background-color: $color-principal;
-      }
+  article {
+    @extend .descripcion;
+    align-items: center;
+    
+    p {
+      color: $color-terciario;
+      margin: 20px 0px;
     }
   }
 }
