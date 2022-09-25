@@ -2,42 +2,46 @@
 
 .fondo {
     background: {
-    color: #a6142ad6;
-    image: url(../imagenes/fondo1.jpg);
-    repeat: no-repeat;
-    size: cover;
+    color: #000000;
   }
 
-  .subtitulo {
-    @include boxes (0, 60px);
+  .titulo {
+    @include boxes (0, 30px);
     color: $color-secundario;
     font-size: 3em;
+
+    &__subtitulo {
+      color: $color-secundario;
+      margin: 3px 3px;
+      text-align: center;
+      font-size: x-large;
+    }
+
+    &__centrado {
+      color: $color-secundario;
+      line-height: 1.42857143;
+      margin: 1em;
+
+      font: {
+        family: $font-family;
+        weight: 400;
+        size: 2em;
+      }
+    
+      text: {
+        align: map-get($box, "centro");
+        shadow: 2px 2px $color-terciario;
+      }
+    }
 
     text: {
       align: map-get($box, "centro");
       shadow: 2px 2px $color-terciario;
     }
 
-    h3 {
+    h2 {
       font-family: $font-family;
     } 
-  }
-}
-
-.textoCentrado {
-  color: $color-secundario;
-  line-height: 1.42857143;
-  margin: 2em;
-
-  font: {
-    family: $font-family;
-    weight: 400;
-    size: 2em;
-  }
-
-  text: {
-    align: map-get($box, "centro");
-    shadow: 2px 2px $color-terciario;
   }
 }
 
