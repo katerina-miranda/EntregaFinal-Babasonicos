@@ -32,10 +32,10 @@ body {
   top: 0px;
   z-index: 1; }
 
-img {
-  width: 50px;
+.logo {
+  width: 120px;
   margin-left: 25%; }
-  img:hover {
+  .logo:hover {
     transform: scale(1.1);
     transition: all 1s; }
 
@@ -50,32 +50,19 @@ img {
   font-size: 1.3rem;
   font-weight: 500; }
   .nav-link:hover {
-    transform: scale(0.8);
+    transform: scale(0.9);
     transition: all 1s;
     color: #f5f5f5; }
   .nav-link.activo {
     color: #f5f5f5; }
 
-.resaltado {
-  background-color: #a6142ab4;
-  border-radius: 5px; }
-
 .h1 {
-  margin: 5px;
   padding: 20px;
   text-align: center;
-  color: #f5f5f5;
-  font-size: 30px;
-  background: linear-gradient(90deg, #f4f4f4 0%, #791121 50%, #f4f4f4 100%); }
+  color: #f5f5f5; }
   .h1:hover {
     transform: scale(1) rotateX(360deg);
     transition: all 5s; }
-
-.primerParrafo {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  color: #000000; }
 
 /* Footer */
 .footer {
@@ -91,18 +78,18 @@ img {
     flex-direction: row;
     justify-content: center; }
     .footer__lista .redesSociales {
-      color: #791121;
-      padding: 20px;
+      color: #7e0719;
+      padding: 5px;
       font-style: normal; }
       .footer__lista .redesSociales:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: all 1s;
-        color: #791121; }
+        color: #7e0719; }
     .footer__lista i a {
-      color: #555a5f;
+      color: #f5f5f5;
       text-decoration: none; }
       .footer__lista i a:hover {
-        color: #791121; }
+        color: #7e0719; }
 
 h5 {
   margin: 5px;
@@ -118,21 +105,21 @@ h5 {
 p {
   margin: 10px;
   padding: 0px 20px;
-  color: #555a5f;
+  color: #f5f5f5;
   line-height: 24px;
   letter-spacing: 0;
   font-weight: 400;
   font-size: 21px; }
 
 #whatsapp {
-  width: 50px;
+  width: 38px;
   position: fixed;
   right: 21px;
   bottom: 21px; }
 
 span {
   padding: 10px;
-  color: #77777758;
+  color: #95959558;
   display: flex;
   font-size: 15px;
   font-weight: 100; }
@@ -140,6 +127,13 @@ span {
 /* Index */
 .fondo {
   background-color: #000000; }
+  .fondo__trinchera {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px; }
   .fondo .titulo {
     margin: 0;
     padding: 30px;
@@ -147,7 +141,7 @@ span {
     font-size: 3em;
     text-align: center;
     text-shadow: 2px 2px #000000; }
-    .fondo .titulo__subtitulo {
+    .fondo .titulo__parrafo {
       color: #f5f5f5;
       margin: 3px 3px;
       text-align: center;
@@ -155,7 +149,7 @@ span {
     .fondo .titulo__centrado {
       color: #f5f5f5;
       line-height: 1.42857143;
-      margin: 1em;
+      margin: 10px;
       font-family: "Playfair Display", serif;
       font-weight: 400;
       font-size: 2em;
@@ -172,12 +166,13 @@ span {
   .boton #link {
     color: #f5f5f5;
     text-decoration: none;
-    background-color: #6b54547c;
-    border: solid 2px #791121;
+    background-color: #3030307c;
+    border: solid 2px #7e0719;
     border-radius: 5px;
-    padding: 20px; }
+    padding: 11px;
+    font-size: 15px; }
     .boton #link:hover {
-      background-color: #f5f5f5ae;
+      background-color: #d59a9a7c;
       color: #000000;
       transform: scale(1.2);
       transition: all 1s; }
@@ -200,7 +195,19 @@ span {
   padding: 0;
   text-align: center; }
 
-/* Carta */
+/* Biografía */
+.parrafo {
+  color: #f5f5f5;
+  margin: 0px 20px;
+  text-align: center;
+  font-size: 20px; }
+
+.grupo {
+  padding: 30px 80px;
+  background-color: #000000; }
+  .grupo img {
+    width: 100%; }
+
 .container {
   margin-bottom: 30px; }
 
@@ -211,9 +218,9 @@ span {
 
 .negrita {
   font-weight: 800;
-  color: #791121; }
+  color: #7e0719; }
 
-/* Galería */
+/* Discografía */
 .carousel {
   background-color: rgba(128, 128, 128, 0.422); }
 
@@ -254,7 +261,7 @@ span {
       background-color: #79112149;
       color: #f5f5f5; }
       .formulario .botonForm .btn:hover {
-        background-color: #791121; }
+        background-color: #7e0719; }
 
 @media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {

@@ -5,12 +5,21 @@
     color: #000000;
   }
 
+  &__trinchera {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+  }
+
   .titulo {
     @include boxes (0, 30px);
     color: $color-secundario;
     font-size: 3em;
 
-    &__subtitulo {
+    &__parrafo {
       color: $color-secundario;
       margin: 3px 3px;
       text-align: center;
@@ -20,7 +29,7 @@
     &__centrado {
       color: $color-secundario;
       line-height: 1.42857143;
-      margin: 1em;
+      margin: 10px;
 
       font: {
         family: $font-family;
@@ -60,7 +69,8 @@
     background-color: $index-btn;
     border: solid 2px $color-principal;
     border-radius: 5px;
-    padding: map-get($tamanios, "px");
+    padding: 11px;
+    font-size: 15px;
 
     &:hover {
       background-color: $index-btn-h;

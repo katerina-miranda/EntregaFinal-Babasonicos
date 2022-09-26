@@ -1,4 +1,20 @@
-/* Carta */
+/* Biografía */
+
+.parrafo {
+  color: $color-secundario;
+  margin: 0px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.grupo {
+  padding: 30px 80px;
+  background-color: $color-terciario;
+
+  img {
+    width: 100%;
+  }
+}
 
 .container {
   margin-bottom: 30px;
