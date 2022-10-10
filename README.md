@@ -1,4 +1,4 @@
-# proyectofinal-cincinnati
+# proyectofinal-babasonicos
 Este es mi proyecto final para el curso de desarrollo web
 
 
