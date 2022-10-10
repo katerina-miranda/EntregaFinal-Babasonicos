@@ -60,37 +60,49 @@
   </header>
   <main>
     <!-- Contenido -->
-    <h1 class="resaltado h1">Contacto</h1>
-    <p class="primerParrafo">Envianos tu consulta y nos comunicaremos a la brevedad.</p>
-    <form>
-      <fieldset class="formulario">
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput1" placeholder="Nombre completo">
-          <label for="floatingInput1">Nombre y apellido</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput2" placeholder="nombre@example.com">
-          <label for="floatingInput2">Correo electrónico</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="tel" class="form-control" id="floatingInput3" placeholder="Teléfono">
-          <label for="floatingInput3">Teléfono</label>
-        </div>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Dejar un comentario" id="floatingTextarea2" style="height: 100px"></textarea>
-          <label for="floatingTextarea2">Dejanos tu comentario</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Desea recibir el Newslatter?
-          </label>
-        </div>
-        <div class="col-auto botonForm">
-          <button type="submit" class="btn mb-3">Enviar</button>
-        </div>
-      </fieldset>
-    </form>
+    <section class="fondo">
+      <h1 class="resaltado h1">CONTACTO</h1>
+      <div class="container contact_form">
+        <div class="container-fluid formulario text-dark text-center mt-2">
+          <p class="resaltado">¡Contactá con nosotros!</p>
+          <p class="primerParrafo">Responderemos a la brevedad</p>
+          <form>
+            <p>
+              <label for="nombre" class="colocar_nombre">Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+            <p>
+              <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+            <p>
+              <label for="telefone" class="colocar_telefono">Teléfono</label>
+              <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>
+            <p>
+              <label for="asunto" class="colocar_asunto">Asunto
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+            </p>
+            <p>
+              <label for="mensaje" class="colocar_mensaje">Mensaje
+                <span class="obligatorio">*</span>
+              </label>
+              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+            </p>
+            <button class= "botonform" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+            <p class="aviso">
+              <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+          </form>
+        </div>  
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <!-- Pie de sitio -->

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* Maps */
 /* Extends */
-.descripcion, .imagenTexto1 .descripcion, .imagenTexto2 .descripcion, .ubicacionMapa {
+.descripcion, .imagenTexto1 .descripcion, .imagenTexto2 .descripcion {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-h4, .imagenTexto1 .descripcion h4, .imagenTexto1 .ubicacionMapa h4, .imagenTexto2 .descripcion h4, .imagenTexto2 .ubicacionMapa h4 {
+h4, .imagenTexto1 .descripcion h4, .imagenTexto2 .descripcion h4 {
   letter-spacing: 0mm;
   padding: 10px 50px 20px;
   font-family: "Playfair Display", serif;
@@ -191,7 +191,7 @@ span {
     transform: scale(1.1);
     transition: all 2s; }
 
-.descripcion p, .imagenTexto1 .descripcion p, .imagenTexto2 .descripcion p, .ubicacionMapa p {
+.descripcion p, .imagenTexto1 .descripcion p, .imagenTexto2 .descripcion p {
   padding: 0;
   text-align: center; }
 
@@ -273,34 +273,179 @@ ol li {
   color: white; }
 
 /* Ubicación */
-.ubicacionMapa {
-  align-items: center; }
-  .ubicacionMapa .logoUbicacion {
-    width: 50px;
-    height: 50px;
-    margin-left: 0; }
-
-.mapa {
+.contenido .contconcert {
   width: 100%;
-  height: 600px; }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; }
+
+.cards {
+  display: flex;
+  border-radius: 5px;
+  min-height: 250px;
+  min-width: 330px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+  min-width: 450px;
+  /* @include deskt(){
+    min-height: 300px;
+    min-width: 450px;
+   
+    } */ }
+  .cards:hover .tourport {
+    opacity: 1;
+    /* color: map-get($colors, "rosita"); */
+    color: pink; }
+  .cards .tourport {
+    display: flex;
+    border-radius: 5px;
+    min-height: 250px;
+    min-width: 330px;
+    font-weight: bold;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: .9;
+    transition: 0.5s;
+    min-height: 300px;
+    min-width: 450px;
+    /*  @include deskt(){
+        min-height: 300px;
+        min-width: 450px;
+        } */ }
+  .cards h3 p {
+    color: white;
+    justify-content: end; }
 
 /* Contacto */
-.formulario {
+/* .formulario {
   padding: 5%;
   margin: 0px 10%;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: #7d3e48;
-  border-radius: 25px; }
-  .formulario .botonForm {
-    display: flex;
-    justify-content: center; }
-    .formulario .botonForm .btn {
-      background-color: #79112149;
-      color: #f5f5f5; }
-      .formulario .botonForm .btn:hover {
-        background-color: #7e0719; }
+  display: map-get($box, "display");
+  flex-direction: map-get($box, "linea");
+  background-color: $color-form;
+  border-radius: 25px;
+
+  .botonForm {
+    display: map-get($box, "display");
+    justify-content: map-get($box, "centro");
+
+    .btn {
+      background-color: $boton-form;
+      color: $color-secundario;
+
+      &:hover{
+        background-color: $color-principal;
+      }
+    }
+  }
+} */
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  /* @include mob(){ */
+  width: 340px;
+  /* } */ }
+  .contact_form input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: pink;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    /* @include mob(){ */
+    width: 300px;
+    /* } */ }
+  .contact_form textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: pink;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    /* @include mob(){ */
+    width: 300px;
+    /* } */ }
+
+label {
+  display: block;
+  float: center; }
+
+.botonform {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: pink;
+  border-color: pink;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+  /* @include mob(){ */
+  width: 300px;
+  /* } */ }
+  .botonform p {
+    color: black; }
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e; }
+
+::-webkit-input-placeholder {
+  color: grey; }
+
+::-webkit-textarea-placeholder {
+  color: grey; }
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid black; }
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid black; }
+
+.iframeindex {
+  width: 570px;
+  height: 350px;
+  margin-top: 2rem;
+  /* @include mob(){ */
+  width: 310px;
+  height: 210px;
+  /* } */ }
+
+.fondobio {
+  /* @include mob(){ */
+  width: 340px;
+  height: 240px;
+  /* } */ }
+
+.fondobio {
+  /* @include mob(){ */
+  width: 340px;
+  height: 240px;
+  /* } */ }
 
 @media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {

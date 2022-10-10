@@ -1,6 +1,6 @@
 /* Contacto */
 
-.formulario {
+/* .formulario {
   padding: 5%;
   margin: 0px 10%;
   margin-bottom: 20px;
@@ -22,4 +22,135 @@
       }
     }
   }
+} */
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  background-color: #fbfbfb;
+  
+  /* @include mob(){ */
+    width: 340px;
+    /* } */
+
+
+    input{
+      background-color: #fbfbfb; 
+      width: 408px; 
+      height: 40px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: /* map-get($colors, "rosita") */ pink; 
+      margin-top: 10px;  
+      padding-left: 10px;
+      margin-bottom: 20px; 
+
+      /* @include mob(){ */
+        width: 300px;
+        /* } */
+    }
+    textarea{
+      background-color: #fbfbfb; 
+      width: 405px; 
+      height: 150px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: /* map-get($colors, "rosita") */ pink; 
+      margin-top: 10px;  
+      padding-left: 10px;
+      margin-bottom: 20px; 
+      padding-top: 15px; 
+
+      /* @include mob(){ */
+        width: 300px;
+        /* } */
+    }
+  }
+
+
+
+label{
+  display: block; 
+  float: center;  
 }
+
+.botonform{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: /* map-get($colors, "rosita") */ pink;
+  border-color: /* map-get($colors, "rosita") */ pink; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+
+     p{
+       color: black;}
+
+       /* @include mob(){ */
+        width: 300px;
+        /* } */
+}
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+::-webkit-input-placeholder {
+ color: /* map-get($colors, "grisesito") */ grey;
+}
+
+
+::-webkit-textarea-placeholder {
+ color:/* map-get($colors, "grisesito") */ grey;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid black;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid black;
+} 
+
+
+.iframeindex{
+  width: 570px;
+  height: 350px;
+  margin-top: 2rem;
+
+  /* @include mob(){ */
+  width: 310px;
+  height: 210px;
+  /* } */
+} 
+
+
+.fondobio{
+ 
+    /* @include mob(){ */
+    width: 340px;
+    height: 240px;
+    /* } */
+  } 
+  
+
+  .fondobio{
+ 
+    /* @include mob(){ */
+    width: 340px;
+    height: 240px;
+    /* } */
+  } 
