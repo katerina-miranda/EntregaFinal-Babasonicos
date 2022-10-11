@@ -1,68 +1,50 @@
-/* Ubicación */
+/* Tour */
 
-.contenido .contconcert {
+.concierto {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-}
 
-.cards {
-  display: flex;
-  border-radius: 5px;
-  min-height: 250px;
-  min-width: 330px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  min-height: 300px;
-  min-width: 450px;
-
-  /* @include deskt(){
-    min-height: 300px;
-    min-width: 450px;
-   
-    } */
-  
-  
-
-  &:hover .tourport  {
-    opacity: 1;
-    /* color: map-get($colors, "rosita"); */ 
-    color: pink;
-
-    
-  }
-
-  .tourport {
+  &__gira {
     display: flex;
     border-radius: 5px;
     min-height: 250px;
-    min-width: 330px; 
-    font-weight: bold;
-    text-decoration: none;
-    
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    background: rgba(0, 0, 0, 0.4);
-    opacity: .9;
-    transition: 0.5s;
+    min-width: 330px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
     min-height: 300px;
-        min-width: 450px;
-    
-     /*  @include deskt(){
+    min-width: 450px;
+    /* @include deskt(){
+      min-height: 300px;
+      min-width: 450px; */
+
+    &__tour {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      border-radius: 5px;
+      min-height: 250px;
+      min-width: 330px; 
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: .9;
+      transition: 0.5s;
+      min-height: 300px;
+      min-width: 450px;
+      /* @include deskt(){
         min-height: 300px;
-        min-width: 450px;
-        } */
-    
+        min-width: 450px; */
+
+      &:hover {
+        opacity: 1;
+        color: pink;
+        /* color: map-get($colors, "rosita"); */ 
+      }
+    }
   }
-
-  h3 p {
-    color: white;
-    justify-content: end;
-  }
-
-
 }
