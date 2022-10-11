@@ -1,17 +1,8 @@
 /* Index */
 
 .fondo {
-    background: {
-    color: #000000;
-  }
-
-  &__trinchera {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 20px;
+  background: {
+  color: #000000;
   }
 
   .titulo {
@@ -20,10 +11,10 @@
     font-size: 3em;
 
     &__parrafo {
-      color: $color-secundario;
-      margin: 3px 3px;
-      text-align: center;
-      font-size: x-large;
+    color: $color-secundario;
+    margin: 3px 3px;
+    text-align: center;
+    font-size: x-large;
     }
 
     &__centrado {
@@ -43,14 +34,18 @@
       }
     }
 
-    text: {
-      align: map-get($box, "centro");
-      shadow: 2px 2px $color-terciario;
-    }
-
     h2 {
       font-family: $font-family;
     } 
+  }
+
+  &__trinchera {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
   }
 }
 
@@ -79,44 +74,4 @@
       transition: all 1s;
     } 
   }
-}
-
-.imagenTexto1 {
-  display: map-get($box, "display");
-
-  .descripcion {
-    @extend .descripcion;
-    
-    h4 {
-      @extend h4;
-    }
-  }
-}
-
-.imagenTexto2 {
-  display: map-get($box, "display");
-  flex-direction: row-reverse;
-  
-  .descripcion {
-    @extend .descripcion;
-
-    h4 {
-      @extend h4;
-    }
-  }
-}
-
-.imagen1, .imagen2 {
-  width: 350px;
-  margin: 70px 70px;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: all 2s;
-  }
-}
-
-.descripcion p {
-  padding: 0;
-  text-align: center;
 }
