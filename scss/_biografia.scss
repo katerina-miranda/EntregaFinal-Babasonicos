@@ -17,17 +17,3 @@
     background-color: $color-terciario;
   }
 }
-
-.container {
-  margin-bottom: 30px;
-}
-
-.col { 
-  @include boxes (1%, 10px 10px);
-  background-color: $color-cols;
-}
-  
-.negrita {
-  font-weight: 800;
-  color: $color-principal;
-}

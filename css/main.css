@@ -190,18 +190,6 @@ span {
   .grupo .carousel {
     background-color: #000000; }
 
-.container {
-  margin-bottom: 30px; }
-
-.col {
-  margin: 1%;
-  padding: 10px 10px;
-  background-color: #7d3e4885; }
-
-.negrita {
-  font-weight: 800;
-  color: #7e0719; }
-
 /* Discografía */
 /* .videos {
   @include flex (flex, row);
