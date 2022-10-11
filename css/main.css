@@ -191,20 +191,7 @@ span {
     background-color: #000000; }
 
 /* Discografía */
-/* .videos {
-  @include flex (flex, row);
-
-  article {
-    @extend .descripcion;
-    align-items: center;
-    
-    p {
-      color: $color-terciario;
-      margin: 20px 0px;
-    }
-  }
-} */
-.cardd {
+.portada {
   display: flex;
   border-radius: 10px;
   min-height: 350px;
@@ -213,29 +200,19 @@ span {
   background-size: cover;
   background-position: center;
   overflow: hidden; }
-
-.cardd:hover .album {
-  opacity: 1; }
-
-.cardd .album {
-  display: flex;
-  border-radius: 10px;
-  min-height: 350px;
-  min-width: 350px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: 0.5s; }
-
-.cardd h1 li {
-  color: white !important;
-  text-decoration: none; }
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-family: Helvetica, sans-serif; }
+  .portada__album {
+    display: flex;
+    border-radius: 10px;
+    min-height: 350px;
+    min-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.5s; }
+    .portada__album:hover {
+      opacity: 1; }
 
 ol li {
   color: white; }
