@@ -1,50 +1,37 @@
 /* Tour */
 
-.concierto {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-
-  &__gira {
+.gira {
+  border-radius: 5px;
+  background: {
+    size: cover;
+    position: center;
+  }
+  
+  &__tour {
+    color: $color-secundario;
+    font-weight: bold;
     display: flex;
-    border-radius: 5px;
-    min-height: 250px;
-    min-width: 330px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    min-height: 300px;
-    min-width: 450px;
-    /* @include deskt(){
-      min-height: 300px;
-      min-width: 450px; */
+    flex-direction: column;
+    justify-content: end;
+    min: {
+      height: 300px;
+      width: 450px;
+    }
 
-    &__tour {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: center;
-      border-radius: 5px;
-      min-height: 250px;
-      min-width: 330px; 
-      font-weight: bold;
-      text-decoration: none;
-      background: rgba(0, 0, 0, 0.4);
-      opacity: .9;
-      transition: 0.5s;
-      min-height: 300px;
-      min-width: 450px;
-      /* @include deskt(){
-        min-height: 300px;
-        min-width: 450px; */
+    &:hover {
+      opacity: 1;
+    }
+
+    &__entradas {
+      color: $color-secundario;
 
       &:hover {
-        opacity: 1;
-        color: pink;
-        /* color: map-get($colors, "rosita"); */ 
+        color: $link-desabilitado;
       }
     }
   }
+}
+
+.d-block {
+  margin: 20px 0px;
 }

@@ -175,10 +175,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 350px;
-    min-width: 350px;
     opacity: 0;
-    transition: 0.5s; }
+    transition: 0.5s;
+    min-height: 350px;
+    min-width: 350px; }
     .portada__album:hover {
       opacity: 1; }
 
@@ -186,47 +186,27 @@ ol li {
   color: #f5f5f5; }
 
 /* Tour */
-.concierto {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center; }
-  .concierto__gira {
+.gira {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center; }
+  .gira__tour {
+    color: #f5f5f5;
+    font-weight: bold;
     display: flex;
-    border-radius: 5px;
-    min-height: 250px;
-    min-width: 330px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
+    flex-direction: column;
+    justify-content: end;
     min-height: 300px;
-    min-width: 450px;
-    /* @include deskt(){
-      min-height: 300px;
-      min-width: 450px; */ }
-    .concierto__gira__tour {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: center;
-      border-radius: 5px;
-      min-height: 250px;
-      min-width: 330px;
-      font-weight: bold;
-      text-decoration: none;
-      background: rgba(0, 0, 0, 0.4);
-      opacity: .9;
-      transition: 0.5s;
-      min-height: 300px;
-      min-width: 450px;
-      /* @include deskt(){
-        min-height: 300px;
-        min-width: 450px; */ }
-      .concierto__gira__tour:hover {
-        opacity: 1;
-        color: pink;
-        /* color: map-get($colors, "rosita"); */ }
+    min-width: 450px; }
+    .gira__tour:hover {
+      opacity: 1; }
+    .gira__tour__entradas {
+      color: #f5f5f5; }
+      .gira__tour__entradas:hover {
+        color: #f48fb0; }
+
+.d-block {
+  margin: 20px 0px; }
 
 /* Contacto */
 /* .formulario {

@@ -3,8 +3,10 @@
 .portada {
   font-weight: 500;
   border-radius: 10px;
-  background-size: cover;
-  background-position: center;
+  background: {
+    size: cover;
+    position: center;
+  }
 
   &__album {
     background: rgba(0, 0, 0, 0.8);
@@ -12,10 +14,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 350px;
-    min-width: 350px;
     opacity: 0;
     transition: 0.5s;
+    min: {
+      height: 350px;
+      width: 350px;
+    }
 
     &:hover {
       opacity: 1;
