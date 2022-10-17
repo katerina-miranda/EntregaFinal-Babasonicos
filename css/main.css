@@ -284,16 +284,16 @@ ol li {
     }
   }
 } */
-.contact_form {
+.formulario {
   width: 460px;
   height: auto;
   margin: 80px auto;
   border-radius: 10px;
-  background-color: #fbfbfb;
+  background-color: #7d3e48;
   /* @include mob(){ */
   width: 340px;
   /* } */ }
-  .contact_form input {
+  .formulario input {
     background-color: #fbfbfb;
     width: 408px;
     height: 40px;
@@ -307,7 +307,7 @@ ol li {
     /* @include mob(){ */
     width: 300px;
     /* } */ }
-  .contact_form textarea {
+  .formulario textarea {
     background-color: #fbfbfb;
     width: 405px;
     height: 150px;
@@ -383,8 +383,7 @@ label {
   /* @include mob(){ */
   width: 340px;
   height: 240px;
-  /* } */
-  color: #0e0e0e; }
+  /* } */ }
 
 @media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {

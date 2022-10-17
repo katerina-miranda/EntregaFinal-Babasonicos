@@ -58,50 +58,40 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="fondo">
     <!-- Contenido -->
-    <section class="fondo">
-      <h1 class="resaltado h1">CONTACTO</h1>
-      <div class="container contact_form">
-        <div class="container-fluid formulario text-dark text-center mt-2">
-          <p class="resaltado">¡Contactá con nosotros!</p>
-          <p class="primerParrafo">Responderemos a la brevedad</p>
-          <form>
-            <p>
-              <label for="nombre" class="colocar_nombre">Nombre
-                <span class="obligatorio">*</span>
-              </label>
-              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-            </p>
-            <p>
-              <label for="email" class="colocar_email">Email
-                <span class="obligatorio">*</span>
-              </label>
-              <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-            </p>
-            <p>
-              <label for="telefone" class="colocar_telefono">Teléfono</label>
-              <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-            </p>
-            <p>
-              <label for="asunto" class="colocar_asunto">Asunto
-                <span class="obligatorio">*</span>
-              </label>
-              <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-            </p>
-            <p>
-              <label for="mensaje" class="colocar_mensaje">Mensaje
-                <span class="obligatorio">*</span>
-              </label>
-              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-            </p>
-            <button class= "botonform" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-            <p class="aviso">
-              <span class="obligatorio"> * </span>los campos son obligatorios.
-            </p>
-          </form>
-        </div>  
-      </div>
+    <section>
+      <h1 class="h1">CONTACTO</h1>
+      <form>
+        <fieldset class="formulario">
+          <p>¡Contactá con nosotros!</p>
+          <p>Responderemos a la brevedad</p>
+          <div>
+            <label for="nombre" class="formulario__colocar__nombre">Nombre<span class="obligatorio">*</span></label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Ingresá tu nombre">
+          </div>
+          <div>
+            <label for="email" class="formulario__colocar__email">Email<span class="obligatorio">*</span></label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Ingresá tu email">
+          </div>
+          <div>
+            <label for="telefono" class="formulario__colocar__telefono">Teléfono</label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ingresá tu teléfono">
+          </div>
+          <div>
+            <label for="asunto" class="formulario__colocar__asunto">Asunto<span class="obligatorio">*</span></label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Ingresá un asunto">
+          </div>
+          <div>
+            <label for="mensaje" class="formulario__colocar__mensaje">Mensaje<span class="obligatorio">*</span></label>
+            <textarea name="introducir_mensaje" class="formulario__texto__mensaje" id="mensaje" required="obligatorio" placeholder="Escribí tu comentario..."></textarea> 
+          </div>
+          <div>
+            <button type="submit" class="btn mb-3">Enviar</button>
+          </div>
+          <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>
+        </fieldset>  
+      </form>
     </section>
   </main>
   <footer class="footer">
