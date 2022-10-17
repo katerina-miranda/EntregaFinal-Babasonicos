@@ -68,66 +68,31 @@ body {
 
 /* Footer */
 
-.footer {
-  background-color: $color-terciario;
-
-  .footerSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  &__lista {
-    @include boxes (auto, 0);
-    width: 90%;
-    display: map-get($box, "display");
-    flex-direction: row;
-    justify-content: map-get($box, "centro");
-
-    .redesSociales {
-      color: $color-principal;
-      padding: 5px;
-      font-style: normal;
-
-      &:hover {
-        transform: scale(1.1);
-        transition: all 1s;
-        color: $color-principal;
-      }
-    }
-
-    i a {
-      color: $color-secundario;
-      text-decoration: none;
-
-      &:hover {
-        color: $color-principal;
-      }
-    }
-  }
-}
-
-h5 {
-  @include boxes (5px, 12px);
-  @include flex (flex, row);
+.lista {
+  @include boxes(auto, 0);
+  width: 90%;
+  display: map-get($box, "display");
   justify-content: map-get($box, "centro");
-  color: $resaltado;
-  line-height: 24px;
 
-  font: {
-    size: map-get($tamanios, "px");
-    weight: 400;
+  .redesSociales {
+    color: $color-principal;
+    padding: 5px;
+    font-style: normal;
+    
+    &:hover {
+      transform: scale(1.1);
+      transition: all 1s;
+      color: $color-principal;
+    }
   }
-}
 
-p {
-  @include boxes (10px, 0px 20px);
-  color: $color-secundario;
-  line-height: 24px;
-  letter-spacing: 0;
-  
-  font: {
-    weight: 400;
-    size: 21px;
+  i a {
+    color: $color-secundario;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-principal;
+    }
   }
 }
 
@@ -136,15 +101,14 @@ p {
   position: fixed;
   right: 35px;
   bottom: 21px;
+  z-index: 1;
 }
 
 span {
   padding: 10px;
   color: $color-footer;
-  display: map-get($box, "display");
 
   font: {
     size: 15px;
-    weight: 100;
   }
 }
