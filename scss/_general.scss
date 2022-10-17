@@ -14,21 +14,19 @@ body {
 /* Header */
 
 .encabezado {
-  background-color: $color-secundario;
   background: $gradiente-encabezado;
-  margin: 0px;
   position: sticky;
   top: 0px;
   z-index: 2;
-}
 
-.logo {
-  width: 120px;
-  margin-left: 25%;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: all 1s;
+  &__logo {
+    width: 120px;
+    margin-left: 25%;
+  
+    &:hover {
+      transform: scale(1.1);
+      transition: all 1s;
+    }
   }
 }
 

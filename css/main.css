@@ -25,19 +25,16 @@ body {
 
 /* Header */
 .encabezado {
-  background-color: #f5f5f5;
   background: linear-gradient(0deg, white 0%, rgba(0, 0, 0, 0.978326) 4%);
-  margin: 0px;
   position: sticky;
   top: 0px;
   z-index: 2; }
-
-.logo {
-  width: 120px;
-  margin-left: 25%; }
-  .logo:hover {
-    transform: scale(1.1);
-    transition: all 1s; }
+  .encabezado__logo {
+    width: 120px;
+    margin-left: 25%; }
+    .encabezado__logo:hover {
+      transform: scale(1.1);
+      transition: all 1s; }
 
 .collapse {
   display: flex;
