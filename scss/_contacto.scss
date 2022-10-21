@@ -2,155 +2,117 @@
 
 .formulario {
   padding: 1%;
-  margin: 50px 50%;
-  margin-bottom: 20px;
+  margin: 9px auto;
+  margin-bottom: 30px;
   display: map-get($box, "display");
   flex-direction: map-get($box, "linea");
   background-color: $color-form;
-  border-radius: 25px;
+  border-radius: 10px;
+  width: 25%;
 
-/*   .botonForm {
-    display: map-get($box, "display");
-    justify-content: map-get($box, "centro");
+  .p1 {
+    color: white;
+    text-align: center;
+    font: {
+      size: 30px;
+      weight: 500;
+    }
+  }
+
+  .p2 {
+    color: white;
+    text-align: center;
+    font: {
+      size: 30px;
+      weight: 500;
+    }
+  }
+
+  &__colocar__nombre, &__colocar__email, &__colocar__telefono, &__colocar__asunto, &__colocar__mensaje {
+    text-align: center;
+    color: $color-secundario;
+  }
+
+  input {
+    background-color: $color-secundario;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 10px;
+    border: {
+      style: solid;
+      color: $color-principal;
+      radius: 5px;
+      width: 2px;
+    }
+  }
+
+  label{
+    display: block;
+  }
+
+  textarea{
+    background-color: $color-secundario;
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: {
+      left: 10px;
+      top: 10px;
+    }
+    border: {
+      style: solid;
+      color: $color-principal;
+      radius: 5px;
+      width: 2px;
+    }
+  }
+
+  .botonForm {
+    width: 10px;
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 35%;
 
     .btn {
       background-color: $boton-form;
       color: $color-secundario;
+      width: 100%;
+      margin-left: 100%;
 
       &:hover{
         background-color: $color-principal;
       }
     }
   }
-}
 
-/* .formulario {  
-  width: 460px; 
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;  
-  background-color: $color-form;
-  
-  /* @include mob(){ */
-    width: 340px;
-    /* } */
-
-
-    input{
-      background-color: #fbfbfb; 
-      width: 408px; 
-      height: 40px; 
-      border-radius: 5px;  
-      border-style: solid; 
-      border-width: 1px; 
-      border-color: /* map-get($colors, "rosita") */ pink; 
-      margin-top: 10px;  
-      padding-left: 10px;
-      margin-bottom: 20px; 
-
-      /* @include mob(){ */
-        width: 300px;
-        /* } */
-    }
-    textarea{
-      background-color: #fbfbfb; 
-      width: 405px; 
-      height: 150px; 
-      border-radius: 5px;  
-      border-style: solid; 
-      border-width: 1px; 
-      border-color: /* map-get($colors, "rosita") */ pink; 
-      margin-top: 10px;  
-      padding-left: 10px;
-      margin-bottom: 20px; 
-      padding-top: 15px; 
-
-      /* @include mob(){ */
-        width: 300px;
-        /* } */
-    }
+  .aviso{
+    font-size: 13px;
+    color: $color-secundario;
+    text-align: center;
   }
-
-
-
-label{
-  display: block; 
-  float: center;  
 }
 
-.botonform{
-  height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
-  text-transform: uppercase;
-  background-color: /* map-get($colors, "rosita") */ pink;
-  border-color: /* map-get($colors, "rosita") */ pink; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
-  cursor: pointer;
-
-     p{
-       color: black;}
-
-       /* @include mob(){ */
-        width: 300px;
-        /* } */
-}
-
-.aviso{
-  font-size: 13px;  
-  color: #0e0e0e;  
-}
-::-webkit-input-placeholder {
- color: /* map-get($colors, "grisesito") */ grey;
-}
+/* ::-webkit-input-placeholder {
+ color: grey;
+} */
 
 
-::-webkit-textarea-placeholder {
- color:/* map-get($colors, "grisesito") */ grey;
-}
+/* ::-webkit-textarea-placeholder {
+ color: grey;
+} */
 
 
-.formulario input:focus{
+/* .formulario input:focus{
   outline:0;
   border: 1px solid black;
-}
+} */
 
 
-.formulario textarea:focus{
+/* .formulario textarea:focus{
   outline:0;
   border: 1px solid black;
-} 
-
-
-.iframeindex{
-  width: 570px;
-  height: 350px;
-  margin-top: 2rem;
-
-  /* @include mob(){ */
-  width: 310px;
-  height: 210px;
-  /* } */
-} 
-
-
-.fondobio{
- 
-    /* @include mob(){ */
-    width: 340px;
-    height: 240px;
-    /* } */
-  } 
-  
-
-  .fondobio{
- 
-    /* @include mob(){ */
-    width: 340px;
-    height: 240px;
-    /* } */
-  } 
+} */

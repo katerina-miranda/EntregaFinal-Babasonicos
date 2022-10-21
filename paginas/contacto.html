@@ -64,14 +64,14 @@
       <h1 class="h1">CONTACTO</h1>
       <form>
         <fieldset class="formulario">
-          <p>¡Contactá con nosotros!</p>
-          <p>Responderemos a la brevedad</p>
+          <p class="p1">¡Contactá con nosotros!</p>
+          <p class="p2">Responderemos a la brevedad</p>
           <div>
-            <label for="nombre" class="formulario__colocar__nombre">Nombre<span class="obligatorio">*</span></label>
+            <label for="nombre" class="formulario__colocar__nombre">Nombre *</label>
             <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Ingresá tu nombre">
           </div>
           <div>
-            <label for="email" class="formulario__colocar__email">Email<span class="obligatorio">*</span></label>
+            <label for="email" class="formulario__colocar__email">Email *</label>
             <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Ingresá tu email">
           </div>
           <div>
@@ -79,17 +79,17 @@
             <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ingresá tu teléfono">
           </div>
           <div>
-            <label for="asunto" class="formulario__colocar__asunto">Asunto<span class="obligatorio">*</span></label>
+            <label for="asunto" class="formulario__colocar__asunto">Asunto *</label>
             <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Ingresá un asunto">
           </div>
           <div>
-            <label for="mensaje" class="formulario__colocar__mensaje">Mensaje<span class="obligatorio">*</span></label>
+            <label for="mensaje" class="formulario__colocar__mensaje">Mensaje *</label>
             <textarea name="introducir_mensaje" class="formulario__texto__mensaje" id="mensaje" required="obligatorio" placeholder="Escribí un comentario..."></textarea> 
           </div>
-          <div>
+          <div class="botonForm">
             <button type="submit" class="btn mb-3">Enviar</button>
           </div>
-          <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>
+          <p class="aviso">* los campos son obligatorios.</p>
         </fieldset>  
       </form>
     </section>
