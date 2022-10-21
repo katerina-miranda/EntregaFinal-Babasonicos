@@ -157,13 +157,16 @@ h2 {
   margin: 15px 5%; }
 
 .grupo {
-  padding: 15px 30px;
+  padding: 10px 30px;
   display: flex;
   justify-content: center; }
   .grupo .carousel {
     width: 99%; }
 
 /* Discografía */
+.mb-3 {
+  margin-bottom: 30px; }
+
 .portada {
   font-weight: 500;
   border-radius: 10px;
@@ -206,19 +209,18 @@ ol li {
         color: #f48fb0; }
 
 .d-block {
-  margin: 20px 0px; }
+  margin: 25px 0px; }
 
 /* Contacto */
-/* .formulario {
-  padding: 5%;
-  margin: 0px 10%;
+.formulario {
+  padding: 1%;
+  margin: 50px 50%;
   margin-bottom: 20px;
-  display: map-get($box, "display");
-  flex-direction: map-get($box, "linea");
-  background-color: $color-form;
+  display: flex;
+  flex-direction: column;
+  background-color: #7d3e48;
   border-radius: 25px;
-
-  .botonForm {
+  /*   .botonForm {
     display: map-get($box, "display");
     justify-content: map-get($box, "centro");
 
@@ -231,13 +233,15 @@ ol li {
       }
     }
   }
-} */
-.formulario {
-  width: 460px;
+}
+
+/* .formulario {  
+  width: 460px; 
   height: auto;
   margin: 80px auto;
-  border-radius: 10px;
-  background-color: #7d3e48;
+  border-radius: 10px;  
+  background-color: $color-form;
+  
   /* @include mob(){ */
   width: 340px;
   /* } */ }
