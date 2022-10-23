@@ -294,25 +294,6 @@ ol li {
   outline:0;
   border: 1px solid black;
 } */
-/* @media screen and (max-width: 1440px) {
-  .imagen1, .imagen2 {
-    height: fit-content;
-    margin: 20px;
-  }
-
-  .videos {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-    iframe {
-      width: 350px;
-      height: 200px;
-      margin: 10px;
-    }
-  }
-}
- */
 @media screen and (max-width: 768px) {
   .formulario {
     width: 60%; }
@@ -327,47 +308,4 @@ ol li {
     min-width: 350px; }
   .titulo__trinchera iframe {
     width: 300px;
-    height: 250px; }
-  /* .fondo {
-    @include grid (grid, 1fr);
-    justify-content: space-evenly;
-    
-    .subtitulo {
-      padding: 0;
-    } 
-  }
-      
-  .textoCentrado {
-    font-size: 1.3em;
-  }
-    
-  .imagenTexto1, .imagenTexto2, .grid {
-    @include flex (flex, column);
-    align-items: center;
-  }
-    
-  .imagen1, .imagen2 {
-    @include boxes (0auto, 15px);
-    width: 250px;
-  }
-
-  .footer {
-    .pieMedia {
-      @include grid (grid, 1fr);
-    }
-
-    .footer__lista {
-      @include grid (grid, 1fr);
-      justify-items: center;
-    }
-  }
-
-  .videos {
-    @include grid (grid, 1fr);
-    margin: 20px;
-
-    iframe {
-      width: 300px;
-      height: 200px;
-    }
-  } */ }
+    height: 250px; } }
