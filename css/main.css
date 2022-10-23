@@ -117,6 +117,9 @@ span {
     flex-wrap: wrap;
     margin: 15px;
     padding: 15px; }
+    .titulo__trinchera iframe {
+      width: 660px;
+      height: 415px; }
 
 h2 {
   font-family: "Playfair Display", serif; }
@@ -318,7 +321,7 @@ ol li {
   .formulario {
     width: 80%; }
   .gira__tour {
-    min-width: 300px; }
+    min-width: 350px; }
   /* .fondo {
     @include grid (grid, 1fr);
     justify-content: space-evenly;
