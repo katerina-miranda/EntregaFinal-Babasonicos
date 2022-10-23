@@ -5,21 +5,20 @@
   line-height: 1.42857143;
   margin-bottom: 15px;
   text: {
-    align: center;
+    align: map-get($font, "align");
   }
 }
 
 .parrafo {
   color: $color-secundario;
-  text-align: center;
+  text-align: map-get($font, "align");
   font-size: 20px;
   margin: 15px 5%;
 }
 
 .grupo {
+  @extend %centrar;
   padding: 10px 30px;
-  display: flex;
-  justify-content: center;
 
   .carousel {
     width: 99%;

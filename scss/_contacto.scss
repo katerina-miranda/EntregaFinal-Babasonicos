@@ -12,7 +12,7 @@
 
   .p1 {
     color: $color-secundario;
-    text-align: center;
+    text-align: map-get($font, "align");
     font: {
       size: 30px;
       weight: 500;
@@ -21,7 +21,7 @@
 
   .p2 {
     color: $color-secundario;
-    text-align: center;
+    text-align: map-get($font, "align");
     font: {
       size: 30px;
       weight: 500;
@@ -29,23 +29,23 @@
   }
 
   &__colocar__nombre {
-    @extend .input;
+    @extend %input;
   }
 
   &__colocar__email {
-    @extend .input;
+    @extend %input;
   }
 
   &__colocar__telefono {
-    @extend .input;
+    @extend %input;
   }
 
   &__colocar__asunto {
-    @extend .input;
+    @extend %input;
   }
 
   &__colocar__mensaje {
-    @extend .input;
+    @extend %input;
   }
 
   input {
@@ -107,6 +107,6 @@
   .aviso{
     font-size: 13px;
     color: $color-secundario;
-    text-align: center;
+    text-align: map-get($font, "align");
   }
 }

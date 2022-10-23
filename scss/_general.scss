@@ -55,7 +55,7 @@ body {
 
 .h1 {
   padding: 20px;
-  text-align: center;
+  text-align: map-get($font, "align");
   color: $color-secundario;
 
   &:hover {
@@ -67,10 +67,9 @@ body {
 /* Footer */
 
 .lista {
+  @extend %centrar;
   @include boxes(auto, 0);
   width: 90%;
-  display: flex;
-  justify-content: center;
     
   .redesSociales {
     color: $color-principal;

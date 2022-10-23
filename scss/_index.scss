@@ -8,7 +8,7 @@
   &__parrafo {
     color: $color-secundario;
     margin: 1px 3%;
-    text-align: center;
+    text-align: map-get($font, "align");
     font-size: x-large;
   }
 
@@ -17,14 +17,13 @@
     line-height: 1.42857143;
     margin: 15px;
     text: {
-      align: center;
+      align: map-get($font, "align");
     }
   }
 
   &__trinchera {
-    display: flex;
+    @extend %centrar;
     flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
     margin: 15px;
     padding: 15px;
@@ -41,11 +40,9 @@ h2 {
 }
 
 .boton {
-  text-align: center;
+  @extend %centrar;
   height: 80px;
-  display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 
   #link {

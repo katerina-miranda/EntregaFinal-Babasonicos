@@ -1,9 +1,13 @@
 @charset "UTF-8";
 /* Maps */
 /* Extends */
-.input, .formulario__colocar__nombre, .formulario__colocar__email, .formulario__colocar__telefono, .formulario__colocar__asunto, .formulario__colocar__mensaje {
+.formulario__colocar__nombre, .formulario__colocar__email, .formulario__colocar__telefono, .formulario__colocar__asunto, .formulario__colocar__mensaje {
   text-align: center;
   color: #f5f5f5; }
+
+.lista, .titulo__trinchera, .boton, .grupo {
+  display: flex;
+  justify-content: center; }
 
 /* Mixins */
 * {
@@ -57,9 +61,7 @@ body {
 .lista {
   margin: auto;
   padding: 0;
-  width: 90%;
-  display: flex;
-  justify-content: center; }
+  width: 90%; }
   .lista .redesSociales {
     color: #7e0719;
     padding: 5px;
@@ -103,9 +105,7 @@ span {
     margin: 15px;
     text-align: center; }
   .titulo__trinchera {
-    display: flex;
     flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
     margin: 15px;
     padding: 15px; }
@@ -117,11 +117,8 @@ h2 {
   font-family: "Playfair Display", serif; }
 
 .boton {
-  text-align: center;
   height: 80px;
-  display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 30px; }
   .boton #link {
     color: #f5f5f5;
@@ -152,9 +149,7 @@ h2 {
   margin: 15px 5%; }
 
 .grupo {
-  padding: 10px 30px;
-  display: flex;
-  justify-content: center; }
+  padding: 10px 30px; }
   .grupo .carousel {
     width: 99%; }
 
