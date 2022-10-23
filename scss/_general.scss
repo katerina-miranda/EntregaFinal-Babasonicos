@@ -73,19 +73,19 @@ body {
   width: 90%;
   display: map-get($box, "display");
   justify-content: map-get($box, "centro");
-
+    
   .redesSociales {
     color: $color-principal;
     padding: 5px;
     font-style: normal;
-    
+      
     &:hover {
       transform: scale(1.1);
       transition: all 1s;
       color: $color-principal;
     }
   }
-
+    
   i a {
     color: $color-secundario;
     text-decoration: none;
@@ -95,7 +95,7 @@ body {
     }
   }
 }
-
+  
 #whatsapp {
   width: 38px;
   position: fixed;
@@ -103,12 +103,11 @@ body {
   bottom: 21px;
   z-index: 1;
 }
-
+  
 span {
   padding: 10px;
   color: $color-footer;
-
   font: {
-    size: 15px;
+  size: 15px;
   }
-}
+} 

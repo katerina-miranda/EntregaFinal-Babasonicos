@@ -1,4 +1,4 @@
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
   .imagen1, .imagen2 {
     height: fit-content;
     margin: 20px;
@@ -16,9 +16,17 @@
     }
   }
 }
-
-@media screen and (max-width: 480px) {
-  .fondo {
+ */
+@media screen and (max-width: 768px) {
+  .formulario {
+    width: 60%;
+  }
+ }
+@media screen and (max-width: 425px) {
+  .formulario {
+    width: 80%;
+  }
+  /* .fondo {
     @include grid (grid, 1fr);
     justify-content: space-evenly;
     
@@ -60,5 +68,5 @@
       width: 300px;
       height: 200px;
     }
-  }
+  } */
 }
