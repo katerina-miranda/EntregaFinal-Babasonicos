@@ -31,12 +31,6 @@ $posit: (
   "transit1": all 1s,
   "transit5": all 5s
 );
-  
-$box: (
-  "display": flex,
-  "linea": column,
-  "centro": center
-);
 
 $z: (
   "cover": cover,
@@ -47,13 +41,12 @@ $z: (
 
 /* Extends */
 
-.descripcion {
-  display: map-get($box, "display");
-  flex-direction: map-get($box, "linea");
-  justify-content: map-get($box, "centro");
+.input {
+  text-align: center;
+  color: $color-secundario;
 }
 
-h4 {
+%flexbox {
   letter-spacing: 0mm;
   padding: 10px 50px 20px;
   font-family: $font-family;

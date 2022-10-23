@@ -1,17 +1,9 @@
 @charset "UTF-8";
 /* Maps */
 /* Extends */
-.descripcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-h4 {
-  letter-spacing: 0mm;
-  padding: 10px 50px 20px;
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
-  text-align: center; }
+.input, .formulario__colocar__nombre, .formulario__colocar__email, .formulario__colocar__telefono, .formulario__colocar__asunto, .formulario__colocar__mensaje {
+  text-align: center;
+  color: #f5f5f5; }
 
 /* Mixins */
 * {
@@ -167,52 +159,65 @@ h2 {
     width: 99%; }
 
 /* Discografía */
-.mb-3 {
-  margin-bottom: 30px; }
-
-.portada {
-  font-weight: 500;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center; }
-  .portada__album {
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 5s;
-    min-height: 350px;
-    min-width: 350px; }
-    .portada__album:hover {
-      opacity: 1; }
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .contenido .portada {
+    font-weight: 500;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center; }
+    .contenido .portada__album {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.5s;
+      min-height: 350px;
+      min-width: 350px; }
+      .contenido .portada__album:hover {
+        opacity: 1; }
+      .contenido .portada__album .nav-link {
+        color: #f5f5f5; }
 
 ol li {
   color: #f5f5f5; }
 
 /* Tour */
-.gira {
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center; }
-  .gira__tour {
-    color: #f5f5f5;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    min-height: 300px;
-    min-width: 450px; }
-    .gira__tour:hover {
-      opacity: 1; }
-    .gira__tour__entradas {
-      color: #f5f5f5; }
-      .gira__tour__entradas:hover {
-        color: #f48fb0; }
+.contenido {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .contenido .gira {
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center; }
+    .contenido .gira__tour {
+      color: #f5f5f5;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      min-height: 300px;
+      min-width: 450px; }
+      .contenido .gira__tour:hover {
+        opacity: 1; }
+      .contenido .gira__tour__entradas {
+        color: #f5f5f5; }
+        .contenido .gira__tour__entradas:hover {
+          color: #f48fb0; }
 
 .d-block {
-  margin: 25px 0px; }
+  margin: 25px 0; }
 
 /* Contacto */
 .formulario {
@@ -234,9 +239,6 @@ ol li {
     text-align: center;
     font-size: 30px;
     font-weight: 500; }
-  .formulario__colocar__nombre, .formulario__colocar__email, .formulario__colocar__telefono, .formulario__colocar__asunto, .formulario__colocar__mensaje {
-    text-align: center;
-    color: #f5f5f5; }
   .formulario input {
     background-color: #f5f5f5;
     width: 100%;

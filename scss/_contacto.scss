@@ -28,9 +28,24 @@
     }
   }
 
-  &__colocar__nombre, &__colocar__email, &__colocar__telefono, &__colocar__asunto, &__colocar__mensaje {
-    text-align: center;
-    color: $color-secundario;
+  &__colocar__nombre {
+    @extend .input;
+  }
+
+  &__colocar__email {
+    @extend .input;
+  }
+
+  &__colocar__telefono {
+    @extend .input;
+  }
+
+  &__colocar__asunto {
+    @extend .input;
+  }
+
+  &__colocar__mensaje {
+    @extend .input;
   }
 
   input {
