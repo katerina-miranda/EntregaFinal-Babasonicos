@@ -2,31 +2,47 @@ $color-principal: rgb(126, 7, 25);
 $color-secundario: #f5f5f5;
 $color-terciario: #000000;
 $link-desabilitado: #f48fb0;
+$index-btn: rgba(126, 7, 25, 0.577);
+$index-btn-h: rgb(128, 46, 59);
 $gradiente-encabezado: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.9783263647255778) 4%);
-$gradiente-h1: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(121,17,33,1) 50%, rgba(244,244,244,1) 100%);
-$index-btn: #3030307c;
-$index-btn-h: #d59a9a7c;
-$resaltado: #a6142ab4;
-$color-cols: #7d3e4885;
+$album-h: rgba(0, 0, 0, 0.8);
 $color-form: #7d3e48;
 $boton-form: #79112149;
 $color-footer: #95959558;
-$letras-footer: #555a5f;
-$fondo-footer: #000000;
-
 $font-family: "Playfair Display", serif;
 
 /* Maps */
 
-$tamanios: (
-  "px": 20px,
-  "box": 5px,
+$font: (
+  "f-body": 'Lato',
+  "style": normal,
+  "deco": none,
+  "bold": bold,
+  "solid" :solid
+);
+
+$posit: (
+  "block": block,
+  "stick": sticky,
+  "fixed": fixed,
+  "scaleh1": scale(1) rotateX(360deg),
+  "scale1": scale(1.1),
+  "scale09": scale(0.9),
+  "transit1": all 1s,
+  "transit5": all 5s
 );
   
 $box: (
   "display": flex,
   "linea": column,
   "centro": center
+);
+
+$z: (
+  "cover": cover,
+  "0": 0,
+  "1": 1,
+  "2": 2
 );
 
 /* Extends */

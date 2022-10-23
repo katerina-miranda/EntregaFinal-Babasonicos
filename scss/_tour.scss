@@ -3,13 +3,13 @@
 .gira {
   border-radius: 5px;
   background: {
-    size: cover;
+    size: map-get($z, "cover");
     position: center;
   }
   
   &__tour {
     color: $color-secundario;
-    font-weight: bold;
+    font-weight: map-get($font, "bold");
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -19,7 +19,7 @@
     }
 
     &:hover {
-      opacity: 1;
+      opacity: map-get($z, "1");
     }
 
     &__entradas {

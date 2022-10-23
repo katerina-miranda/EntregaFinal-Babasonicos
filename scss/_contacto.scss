@@ -4,14 +4,14 @@
   padding: 1%;
   margin: 9px auto;
   margin-bottom: 30px;
-  display: map-get($box, "display");
-  flex-direction: map-get($box, "linea");
+  display: flex;
+  flex-direction: column;
   background-color: $color-form;
   border-radius: 10px;
   width: 35%;
 
   .p1 {
-    color: white;
+    color: $color-secundario;
     text-align: center;
     font: {
       size: 30px;
@@ -20,7 +20,7 @@
   }
 
   .p2 {
-    color: white;
+    color: $color-secundario;
     text-align: center;
     font: {
       size: 30px;
@@ -40,7 +40,7 @@
     margin: 10px 0;
     padding-left: 10px;
     border: {
-      style: solid;
+      style: map-get($font, "solid");
       color: $color-principal;
       radius: 5px;
       width: 2px;
@@ -48,7 +48,7 @@
   }
 
   label{
-    display: block;
+    display: map-get($posit, "block");
   }
 
   textarea{
@@ -61,7 +61,7 @@
       top: 10px;
     }
     border: {
-      style: solid;
+      style: map-get($font, "solid");
       color: $color-principal;
       radius: 5px;
       width: 2px;
@@ -95,24 +95,3 @@
     text-align: center;
   }
 }
-
-/* ::-webkit-input-placeholder {
- color: grey;
-} */
-
-
-/* ::-webkit-textarea-placeholder {
- color: grey;
-} */
-
-
-/* .formulario input:focus{
-  outline:0;
-  border: 1px solid black;
-} */
-
-
-/* .formulario textarea:focus{
-  outline:0;
-  border: 1px solid black;
-} */

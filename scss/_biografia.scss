@@ -4,9 +4,8 @@
   color: $color-secundario;
   line-height: 1.42857143;
   margin-bottom: 15px;
-
   text: {
-    align: map-get($box, "centro");
+    align: center;
   }
 }
 

@@ -16,7 +16,6 @@
     color: $color-secundario;
     line-height: 1.42857143;
     margin: 15px;
-    
     text: {
       align: map-get($box, "centro");
     }
@@ -42,7 +41,7 @@ h2 {
 }
 
 .boton {
-  text-align: map-get($box, "centro");
+  text-align: center;
   height: 80px;
   display: flex;
   align-items: center;
@@ -51,8 +50,8 @@ h2 {
 
   #link {
     color: $color-secundario;
-    text-decoration: none;
-    background-color: rgba(126, 7, 25, 0.577);
+    text-decoration: map-get($font, "deco");
+    background-color: $index-btn;
     border: solid 2px $color-secundario;
     border-radius: 5px;
     padding: 10px;
@@ -62,10 +61,10 @@ h2 {
     }
 
     &:hover {
-      background-color: rgb(128, 46, 59);
+      background-color: $index-btn-h;
       color: $color-secundario;
-      transform: scale(1.1);
-      transition: all 1s;
+      transform: map-get($posit, "scale1");
+      transition: map-get($posit, "transit1");
     } 
   }
 }

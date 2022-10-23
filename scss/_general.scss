@@ -4,9 +4,8 @@
 
 body {
   background-color: $color-terciario;
-
   font: {
-    family: 'Lato', sans-serif;
+    family: map-get($font, "f-body");
     size: 16px;
   }
 }
@@ -15,38 +14,37 @@ body {
 
 .encabezado {
   background: $gradiente-encabezado;
-  position: sticky;
+  position: map-get($posit, "stick");
   top: 0px;
-  z-index: 2;
+  z-index: map-get($z, "1");
 
   &__logo {
     width: 120px;
     margin-left: 25%;
   
     &:hover {
-      transform: scale(1.1);
-      transition: all 1s;
+      transform: map-get($posit, "scale1");
+      transition: map-get($posit, "transit1");
     }
   }
 }
 
 .collapse {
-  display: map-get($box, "display");
+  display: flex;
   justify-content: flex-end;
 }
 
 .nav-link {
   @include boxes (5px, 5px);
   color: $link-desabilitado;
-  
   font: {
     size: 1.3rem;
     weight: 500;
   }
 
   &:hover {
-    transform: scale(0.9);
-    transition: all 1s;
+    transform: map-get($posit, "scale09");
+    transition: map-get($posit, "transit1");
     color: $color-secundario;
   }
 
@@ -57,12 +55,12 @@ body {
 
 .h1 {
   padding: 20px;
-  text-align: map-get($box, "centro");
+  text-align: center;
   color: $color-secundario;
 
   &:hover {
-    transform: scale(1) rotateX(360deg);
-    transition: all 5s;
+    transform: map-get($posit, "scaleh1");
+    transition: map-get($posit, "transit5");
   }
 }
 
@@ -71,24 +69,24 @@ body {
 .lista {
   @include boxes(auto, 0);
   width: 90%;
-  display: map-get($box, "display");
-  justify-content: map-get($box, "centro");
+  display: flex;
+  justify-content: center;
     
   .redesSociales {
     color: $color-principal;
     padding: 5px;
-    font-style: normal;
+    font-style: map-get($font, "style");
       
     &:hover {
-      transform: scale(1.1);
-      transition: all 1s;
+      transform: map-get($posit, "scale1");
+      transition: map-get($posit, "transit1");
       color: $color-principal;
     }
   }
     
   i a {
     color: $color-secundario;
-    text-decoration: none;
+    text-decoration: map-get($font, "deco");
 
     &:hover {
       color: $color-principal;
@@ -98,7 +96,7 @@ body {
   
 #whatsapp {
   width: 38px;
-  position: fixed;
+  position: map-get($posit, "fixed");
   right: 35px;
   bottom: 21px;
   z-index: 1;
