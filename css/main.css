@@ -325,6 +325,9 @@ ol li {
     width: 80%; }
   .gira__tour {
     min-width: 350px; }
+  .titulo__trinchera iframe {
+    width: 360px;
+    height: 270px; }
   /* .fondo {
     @include grid (grid, 1fr);
     justify-content: space-evenly;
