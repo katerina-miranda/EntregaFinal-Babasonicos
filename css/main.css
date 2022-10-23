@@ -318,7 +318,7 @@ ol li {
   .formulario {
     width: 80%; }
   .gira__tour {
-    min-width: 290px; }
+    min-width: 300px; }
   /* .fondo {
     @include grid (grid, 1fr);
     justify-content: space-evenly;
