@@ -1,47 +1,36 @@
 /* Tour */
 
-.contenido {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  .gira {
-    border-radius: 5px;
-    background: {
-      size: map-get($z, "cover");
-      position: center;
-    }
+.gira {
+  border-radius: 5px;
+  background: {
+    size: map-get($z, "cover");
+    position: center;
+  }
   
-    &__tour {
+  &__tour {
+    color: $color-secundario;
+    font-weight: map-get($font, "bold");
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min: {
+      height: 300px;
+      width: 450px;
+    }
+
+    &:hover {
+      opacity: map-get($z, "1");
+    }
+
+    &__entradas {
       color: $color-secundario;
-      font-weight: map-get($font, "bold");
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      min: {
-        height: 300px;
-        width: 450px;
-      }
 
       &:hover {
-        opacity: map-get($z, "1");
-      }
-
-      &__entradas {
-        color: $color-secundario;
-
-        &:hover {
-          color: $link-desabilitado;
-        }
+        color: $link-desabilitado;
       }
     }
   }
 }
-
 
 .d-block {
   margin: 25px 0;
