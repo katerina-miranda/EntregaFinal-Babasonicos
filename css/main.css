@@ -360,3 +360,7 @@ ol li {
       height: 200px;
     }
   } */ }
+
+@media screen and (max-width: 320px) {
+  .gira__tour {
+    min-width: 290px; } }

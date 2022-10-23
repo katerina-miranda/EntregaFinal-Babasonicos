@@ -26,6 +26,7 @@
   .formulario {
     width: 80%;
   }
+
   /* .fondo {
     @include grid (grid, 1fr);
     justify-content: space-evenly;
@@ -69,4 +70,9 @@
       height: 200px;
     }
   } */
+}
+@media screen and (max-width: 320px) {
+  .gira__tour {
+    min-width: 290px;
+  }
 }
