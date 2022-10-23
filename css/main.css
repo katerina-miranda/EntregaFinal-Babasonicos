@@ -317,6 +317,8 @@ ol li {
 @media screen and (max-width: 425px) {
   .formulario {
     width: 80%; }
+  .gira__tour {
+    min-width: 290px; }
   /* .fondo {
     @include grid (grid, 1fr);
     justify-content: space-evenly;
@@ -360,7 +362,3 @@ ol li {
       height: 200px;
     }
   } */ }
-
-@media screen and (max-width: 320px) {
-  .gira__tour {
-    min-width: 290px; } }
