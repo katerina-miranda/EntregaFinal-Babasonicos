@@ -21,7 +21,15 @@
   .formulario {
     width: 60%;
   }
+
+  .titulo__trinchera {
+    iframe {
+      width: 400px;
+      height: 300px;
+    }
+  }
  }
+
 @media screen and (max-width: 425px) {
   .formulario {
     width: 80%;
