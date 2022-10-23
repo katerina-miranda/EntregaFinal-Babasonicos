@@ -20,7 +20,7 @@ body {
   background: linear-gradient(0deg, white 0%, rgba(0, 0, 0, 0.978326) 4%);
   position: sticky;
   top: 0px;
-  z-index: 1; }
+  z-index: 2; }
   .encabezado__logo {
     width: 120px;
     margin-left: 25%; }

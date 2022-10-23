@@ -16,7 +16,7 @@ body {
   background: $gradiente-encabezado;
   position: map-get($posit, "stick");
   top: 0px;
-  z-index: map-get($z, "1");
+  z-index: map-get($z, "2");
 
   &__logo {
     width: 120px;
