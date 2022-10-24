@@ -1,31 +1,28 @@
 /* Index */
 
 .titulo {
-  @include boxes (0, 30px);
+  @include boxes(0, 30px);
   color: $color-secundario;
   font-size: 3em;
   
   &__parrafo {
+    margin: 0.5px 3%;
     color: $color-secundario;
-    margin: 1px 3%;
     text-align: map-get($font, "align");
     font-size: x-large;
   }
 
   &__centrado {
+    @include boxes(15px, 0);
     color: $color-secundario;
     line-height: 1.42857143;
-    margin: 15px;
-    text: {
-      align: map-get($font, "align");
-    }
+    text-align: map-get($font, "align");
   }
 
   &__trinchera {
+    @include boxes(15px, 15px);
     display: flex;
     justify-content: center;
-    margin: 15px;
-    padding: 15px;
 
     iframe {
       width: 660px;
@@ -39,28 +36,28 @@ h2 {
 }
 
 .boton {
-  @extend %centrar;
+  display: flex;
+  justify-content: center;
   height: 80px;
   align-items: center;
   margin-bottom: 30px;
 
   #link {
+    @include boxes(0, 10px);
     color: $color-secundario;
     text-decoration: map-get($font, "deco");
     background-color: $index-btn;
     border: solid 2px $color-secundario;
     border-radius: 5px;
-    padding: 10px;
     font: {
       size: 15px;
       weight: 400;
     }
 
     &:hover {
+      @extend %animaciones;
       background-color: $index-btn-h;
       color: $color-secundario;
-      transform: map-get($posit, "scale1");
-      transition: map-get($posit, "transit1");
     } 
   }
 }

@@ -1,24 +1,21 @@
 /* Biografía */
 
 .h2 {
-  color: $color-secundario;
+  @extend %input;
+  @include boxes(5px, 0);
   line-height: 1.42857143;
-  margin-bottom: 15px;
-  text: {
-    align: map-get($font, "align");
-  }
 }
 
 .parrafo {
-  color: $color-secundario;
-  text-align: map-get($font, "align");
+  @extend %input;
   font-size: 20px;
-  margin: 15px 5%;
+  margin: 0 5%;
 }
 
 .grupo {
-  @extend %centrar;
-  padding: 10px 30px;
+  @include boxes(0, 10px);
+  display: flex;
+  justify-content: center;
 
   .carousel {
     width: 99%;

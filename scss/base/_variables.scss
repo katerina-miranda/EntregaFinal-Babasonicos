@@ -47,21 +47,27 @@ $z: (
   color: $color-secundario;
 }
 
-%centrar {
-  display: flex;
-  justify-content: center;
+%parrafo {
+  color: $color-secundario;
+  text-align: map-get($font, "align");
+  font: {
+    size: 30px;
+    weight: 500;
+  }
 }
 
-%flexbox {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+%border {
+  border: {
+    style: map-get($font, "solid");
+    color: $color-principal;
+    radius: 5px;
+    width: 2px;
+  }
 }
 
 %animaciones {
-  transform: 1;
-  transition: 1;
+  transform: map-get($posit, "scale1");
+  transition: map-get($posit, "transit1");
 }
 
 /* Mixins */

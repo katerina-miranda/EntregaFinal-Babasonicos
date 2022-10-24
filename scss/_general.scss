@@ -1,5 +1,5 @@
 * {
-  @include boxes (0px, 0px);
+  @include boxes(0px, 0px);
 }
 
 body {
@@ -23,19 +23,18 @@ body {
     margin-left: 25%;
   
     &:hover {
-      transform: map-get($posit, "scale1");
-      transition: map-get($posit, "transit1");
+      @extend %animaciones;
     }
   }
 }
 
 .collapse {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
 
 .nav-link {
-  @include boxes (5px, 5px);
+  @include boxes(5px, 5px);
   color: $link-desabilitado;
   font: {
     size: 1.3rem;
@@ -54,9 +53,8 @@ body {
 }
 
 .h1 {
-  padding: 20px;
-  text-align: map-get($font, "align");
-  color: $color-secundario;
+  @extend %input;
+  @include boxes(0, 20px);
 
   &:hover {
     transform: map-get($posit, "scaleh1");
@@ -67,18 +65,18 @@ body {
 /* Footer */
 
 .lista {
-  @extend %centrar;
+  display: flex;
+  justify-content: center;
   @include boxes(auto, 0);
   width: 90%;
     
   .redesSociales {
+    @include boxes(0, 5px);
     color: $color-principal;
-    padding: 5px;
     font-style: map-get($font, "style");
       
     &:hover {
-      transform: map-get($posit, "scale1");
-      transition: map-get($posit, "transit1");
+      @extend %animaciones;
       color: $color-principal;
     }
   }
@@ -98,13 +96,11 @@ body {
   position: map-get($posit, "fixed");
   right: 35px;
   bottom: 21px;
-  z-index: 1;
+  z-index: map-get($z, "1");
 }
   
 span {
-  padding: 10px;
+  @include boxes(0, 10px);
   color: $color-footer;
-  font: {
-  size: 15px;
-  }
+  font-size: 15px;
 } 

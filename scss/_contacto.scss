@@ -1,8 +1,7 @@
 /* Contacto */
 
 .formulario {
-  padding: 1%;
-  margin: 9px auto;
+  @include boxes(auto, 1%);
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -11,21 +10,11 @@
   width: 35%;
 
   .p1 {
-    color: $color-secundario;
-    text-align: map-get($font, "align");
-    font: {
-      size: 30px;
-      weight: 500;
-    }
+    @extend %parrafo;
   }
 
   .p2 {
-    color: $color-secundario;
-    text-align: map-get($font, "align");
-    font: {
-      size: 30px;
-      weight: 500;
-    }
+    @extend %parrafo;
   }
 
   &__colocar__nombre {
@@ -49,17 +38,11 @@
   }
 
   input {
+    @extend %border;
+    @include boxes(auto, 10px);
     background-color: $color-secundario;
     width: 100%;
     height: 40px;
-    margin: 10px 0;
-    padding-left: 10px;
-    border: {
-      style: map-get($font, "solid");
-      color: $color-principal;
-      radius: 5px;
-      width: 2px;
-    }
   }
 
   label{
@@ -75,21 +58,13 @@
       left: 10px;
       top: 10px;
     }
-    border: {
-      style: map-get($font, "solid");
-      color: $color-principal;
-      radius: 5px;
-      width: 2px;
-    }
+    @extend %border;
   }
 
   .botonForm {
-    width: 10px;
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    height: 45px;
+    padding: 0 5px;
+    margin: 15px 0;
     width: 35%;
 
     .btn {
@@ -105,8 +80,7 @@
   }
 
   .aviso{
+    @extend %input;
     font-size: 13px;
-    color: $color-secundario;
-    text-align: map-get($font, "align");
   }
 }
