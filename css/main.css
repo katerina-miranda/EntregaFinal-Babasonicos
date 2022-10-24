@@ -5,7 +5,7 @@
   text-align: center;
   color: #f5f5f5; }
 
-.lista, .titulo__trinchera, .boton, .grupo {
+.lista, .boton, .grupo {
   display: flex;
   justify-content: center; }
 
@@ -105,8 +105,8 @@ span {
     margin: 15px;
     text-align: center; }
   .titulo__trinchera {
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
     margin: 15px;
     padding: 15px; }
     .titulo__trinchera iframe {

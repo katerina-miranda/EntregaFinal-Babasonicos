@@ -59,11 +59,21 @@ $z: (
   flex-wrap: wrap;
 }
 
+%animaciones {
+  transform: 1;
+  transition: 1;
+}
+
 /* Mixins */
 
 @mixin boxes ($margin, $padding) {
   margin: $margin;
   padding: $padding;
+}
+
+@mixin object ($width, $height) {
+  width: $width;
+  height: $height;
 }
 
 @mixin flex ($display, $direction) {
