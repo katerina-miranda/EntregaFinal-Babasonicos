@@ -18,6 +18,6 @@
   justify-content: center;
 
   .carousel {
-    width: 99%;
+    @include object(99%, none);
   }
 }

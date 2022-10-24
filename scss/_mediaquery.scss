@@ -1,19 +1,18 @@
 @media screen and (max-width: 768px) {
   .formulario {
-    width: 60%;
+    @include object(60%, none);
   }
 
   .titulo__trinchera {
     iframe {
-      width: 400px;
-      height: 300px;
+      @include object(400px, 300px);
     }
   }
  }
 
 @media screen and (max-width: 425px) {
   .formulario {
-    width: 80%;
+    @include object(80%, none);
   }
 
   .gira__tour {
@@ -22,8 +21,7 @@
 
   .titulo__trinchera {
     iframe {
-      width: 300px;
-      height: 250px;
+      @include object(300px, 250px);
     }
   }
 }

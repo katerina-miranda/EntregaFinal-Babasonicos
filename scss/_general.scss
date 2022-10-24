@@ -19,7 +19,7 @@ body {
   z-index: map-get($z, "2");
 
   &__logo {
-    width: 120px;
+    @include object(120px, none);
     margin-left: 25%;
   
     &:hover {
@@ -54,7 +54,7 @@ body {
 
 .h1 {
   @extend %input;
-  @include boxes(0, 20px);
+  @include boxes(none, 20px);
 
   &:hover {
     transform: map-get($posit, "scaleh1");
@@ -65,10 +65,10 @@ body {
 /* Footer */
 
 .lista {
+  @include boxes(auto, 0);
+  @include object(90%, none);
   display: flex;
   justify-content: center;
-  @include boxes(auto, 0);
-  width: 90%;
     
   .redesSociales {
     @include boxes(0, 5px);
@@ -92,7 +92,7 @@ body {
 }
   
 #whatsapp {
-  width: 38px;
+  @include object(38px, none);
   position: map-get($posit, "fixed");
   right: 35px;
   bottom: 21px;
@@ -100,7 +100,7 @@ body {
 }
   
 span {
-  @include boxes(0, 10px);
+  @include boxes(none, 10px);
   color: $color-footer;
   font-size: 15px;
 } 

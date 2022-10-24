@@ -1,7 +1,7 @@
 /* Index */
 
 .titulo {
-  @include boxes(0, 30px);
+  @include boxes(none, 30px);
   color: $color-secundario;
   font-size: 3em;
   
@@ -13,7 +13,7 @@
   }
 
   &__centrado {
-    @include boxes(15px, 0);
+    @include boxes(15px, none);
     color: $color-secundario;
     line-height: 1.42857143;
     text-align: map-get($font, "align");
@@ -25,8 +25,7 @@
     justify-content: center;
 
     iframe {
-      width: 660px;
-      height: 415px;
+      @include object(660px, 415px);
     }
   }
 }
@@ -36,9 +35,9 @@ h2 {
 }
 
 .boton {
+  @include object(none, 80px);
   display: flex;
   justify-content: center;
-  height: 80px;
   align-items: center;
   margin-bottom: 30px;
 
