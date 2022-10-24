@@ -14,8 +14,7 @@
 
 .grupo {
   @include boxes(0, 10px);
-  display: flex;
-  justify-content: center;
+  @include flex(flex, none, none, center, none, none);
 
   .carousel {
     @include object(99%, none);

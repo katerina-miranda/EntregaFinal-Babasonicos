@@ -29,8 +29,7 @@ body {
 }
 
 .collapse {
-  display: flex;
-  justify-content: end;
+  @include flex(flex, none, none, end, none, none);
 }
 
 .nav-link {
@@ -67,8 +66,7 @@ body {
 .lista {
   @include boxes(auto, 0);
   @include object(90%, none);
-  display: flex;
-  justify-content: center;
+  @include flex(flex, none, none, center, none, none);
     
   .redesSociales {
     @include boxes(0, 5px);
@@ -93,9 +91,8 @@ body {
   
 #whatsapp {
   @include object(38px, none);
+  @include sides(none, 21px, none, 35px);
   position: map-get($posit, "fixed");
-  right: 35px;
-  bottom: 21px;
   z-index: map-get($z, "1");
 }
   

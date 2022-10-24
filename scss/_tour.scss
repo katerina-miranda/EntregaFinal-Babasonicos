@@ -8,11 +8,9 @@
   }
   
   &__tour {
+    @include flex(flex, column, none, end, none, none);
     color: $color-secundario;
     font-weight: map-get($font, "bold");
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     min: {
       height: 300px;
       width: 450px;

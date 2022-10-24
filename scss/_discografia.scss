@@ -1,11 +1,7 @@
 /* Discografía */
 
 .contenido {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, column, wrap, center, none, center);
 
   .portada {
     font-weight: 500;
@@ -16,11 +12,8 @@
     }
 
     &__album {
+      @include flex(flex, column, none, center, none, center);
       background: $album-h;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       opacity: map-get($z, "0");
       transition: 0.5s;
       min: {

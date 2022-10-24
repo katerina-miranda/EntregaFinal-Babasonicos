@@ -6,23 +6,20 @@
   font-size: 3em;
   
   &__parrafo {
+    @extend %input;
     margin: 0.5px 3%;
-    color: $color-secundario;
-    text-align: map-get($font, "align");
     font-size: x-large;
   }
 
   &__centrado {
+    @extend %input;
     @include boxes(15px, none);
-    color: $color-secundario;
     line-height: 1.42857143;
-    text-align: map-get($font, "align");
   }
 
   &__trinchera {
     @include boxes(15px, 15px);
-    display: flex;
-    justify-content: center;
+    @include flex(flex, none, none, center, none, none);
 
     iframe {
       @include object(660px, 415px);
@@ -36,9 +33,7 @@ h2 {
 
 .boton {
   @include object(none, 80px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, none, none, center, none, center);
   margin-bottom: 30px;
 
   #link {

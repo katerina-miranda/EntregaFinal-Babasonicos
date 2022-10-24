@@ -82,7 +82,18 @@ $z: (
   height: $height;
 }
 
-@mixin flex ($display, $direction) {
+@mixin sides ($top, $bottom, $left, $right) {
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+@mixin flex ($display, $direction, $wrap, $justify, $aligncontent, $alignitems) {
   display: $display;
   flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-content: $aligncontent;
+  align-items: $alignitems;
 }

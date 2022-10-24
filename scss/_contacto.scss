@@ -3,9 +3,8 @@
 .formulario {
   @include object(35%, none);
   @include boxes(auto, 1%);
+  @include flex(flex, column, none, none, none, none);
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
   background-color: $color-form;
   border-radius: 10px;
 
@@ -50,8 +49,8 @@
 
   textarea{
     @include object(100%, 150px);
-    background-color: $color-secundario;
     @extend %border;
+    background-color: $color-secundario;
     margin-top: 10px;
     padding: {
       left: 10px;
