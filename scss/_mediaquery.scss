@@ -24,4 +24,8 @@
       @include object(300px, 250px);
     }
   }
+
+  #whatsapp {
+    @include sides(none, 21px, none, 10px);
+  }
 }

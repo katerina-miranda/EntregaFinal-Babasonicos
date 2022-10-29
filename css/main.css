@@ -308,4 +308,9 @@ ol li {
     min-width: 350px; }
   .titulo__trinchera iframe {
     width: 300px;
-    height: 250px; } }
+    height: 250px; }
+  #whatsapp {
+    top: none;
+    bottom: 21px;
+    left: none;
+    right: 10px; } }
